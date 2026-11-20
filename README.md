@@ -1,6 +1,6 @@
-# eventify
+# Python Periode 2
 
-Naam: Joris
+Naam: [Jouw naam]
 
-In deze repository bewaar ik mijn Python-opdrachten 
-voor periode-2.
+In deze repository bewaar ik mijn Python-opdrachten
+voor periode 2.
