@@ -1,0 +1,5758 @@
+geef mij een opdracht om een database te maken 
+deze moet meerdere tabellen bevatten die aan elkaar gelinkt zijn
+en later op een website wordt weergeven
+deze mag geadvenceerd zijn
+
+Ik heb een uitdagende databaseopdracht voor je bedacht op gevorderd niveau. Deze opdracht combineert databaseontwerp, SQL, relationele verbanden, normalisatie en website-integratie.
+Opdracht: Ontwikkel een compleet reserverings- en boekingsplatform
+
+Gevorderd niveau Database + SQL + Website
+1. De situatie
+
+Je gaat een database ontwikkelen voor een fictief bedrijf genaamd Eventify.
+
+Eventify is een online platform waarop gebruikers evenementen kunnen bekijken, tickets kunnen kopen, betalingen kunnen uitvoeren en hun bestellingen kunnen beheren.
+
+De database moet uiteindelijk gekoppeld worden aan een website waarop bezoekers:
+
+    Een account kunnen aanmaken.
+
+    Evenementen kunnen bekijken.
+
+    Evenementen kunnen filteren op categorie, locatie en datum.
+
+    Tickets kunnen bestellen.
+
+    Online betalingen kunnen uitvoeren.
+
+    Hun bestellingen kunnen bekijken.
+
+    Reviews kunnen achterlaten.
+
+Daarnaast moet een beheerder evenementen, gebruikers, tickets en bestellingen kunnen beheren.
+2. Database: verplichte tabellen
+
+Je moet minimaal 12 tabellen maken.
+
+Tabel
+	
+
+Functie
+
+users
+	
+
+Gebruikersgegevens
+
+roles
+	
+
+Rollen en rechten
+
+user_roles
+	
+
+Koppeling tussen gebruikers en rollen
+
+events
+	
+
+Evenementen
+
+categories
+	
+
+Evenementcategorieën
+
+locations
+	
+
+Locaties van evenementen
+
+organizers
+	
+
+Organisatoren
+
+tickets
+	
+
+Beschikbare tickets
+
+orders
+	
+
+Bestellingen
+
+order_items
+	
+
+Producten binnen een bestelling
+
+payments
+	
+
+Betalingen
+
+reviews
+	
+
+Beoordelingen van evenementen
+
+Je mag extra tabellen toevoegen als je databaseontwerp daar beter van wordt.
+3. Relaties tussen de tabellen
+
+Je moet gebruikmaken van verschillende soorten relaties:
+
+    One-to-One: bijvoorbeeld een gebruiker en zijn profiel.
+
+    One-to-Many: één organisator kan meerdere evenementen organiseren.
+
+    Many-to-Many: één evenement kan meerdere categorieën hebben en één categorie kan bij meerdere evenementen horen.
+
+Een voorbeeld van de databaseopbouw:
+How to Design ER Diagrams for Online Ticketing and Event Management - GeeksforGeeks
+ 
+
+De relaties moeten correct worden geïmplementeerd met:
+
+    Primary Keys (PK).
+
+    Foreign Keys (FK).
+
+    Unique constraints.
+
+    Check constraints.
+
+    Indexes.
+
+4. Functionele eisen
+
+Je database moet de volgende functionaliteiten ondersteunen.
+
+Gebruikers
+
+    Gebruikers registreren.
+
+    Gebruikers aanpassen en verwijderen.
+
+    Verschillende gebruikersrollen beheren.
+
+    Gebruikers blokkeren.
+
+Evenementen
+
+    Evenementen toevoegen, aanpassen en verwijderen.
+
+    Evenementen koppelen aan organisatoren.
+
+    Evenementen koppelen aan meerdere categorieën.
+
+    Evenementen filteren op datum, locatie en categorie.
+
+Tickets en bestellingen
+
+    Verschillende ticketsoorten per evenement.
+
+    Meerdere tickets in één bestelling.
+
+    Automatisch de totaalprijs berekenen.
+
+    Bijhouden hoeveel tickets nog beschikbaar zijn.
+
+    Voorkomen dat meer tickets worden verkocht dan beschikbaar.
+
+Betalingen
+
+    Betalingen registreren.
+
+    Betaalstatus bijhouden.
+
+    Meerdere betaalpogingen kunnen registreren.
+
+    Terugbetalingen ondersteunen.
+
+Reviews
+
+    Gebruikers kunnen evenementen beoordelen.
+
+    Een gebruiker mag een evenement maximaal één keer beoordelen.
+
+    Reviews moeten een score van 1 tot 5 bevatten.
+
+5. Geavanceerde SQL-opdrachten
+
+Hier begint de echte uitdaging. Je moet minimaal de volgende SQL-query's ontwikkelen.
+
+    Toon alle evenementen met hun organisator en locatie.
+
+    Toon alle evenementen met meer dan 100 verkochte tickets.
+
+    Bereken de totale omzet per evenement.
+
+    Toon de vijf populairste evenementen.
+
+    Toon alle gebruikers die nog nooit een bestelling hebben geplaatst.
+
+    Bereken de gemiddelde beoordeling per evenement.
+
+    Toon alle bestellingen van een specifieke gebruiker.
+
+    Toon alle evenementen waarvan de tickets bijna uitverkocht zijn.
+
+    Bereken de totale omzet per organisator.
+
+    Toon de gebruikers die het meeste geld hebben uitgegeven.
+
+Extra uitdagingen:
+
+    Maak minimaal twee SQL Views.
+
+    Maak minimaal twee Stored Procedures.
+
+    Maak minimaal twee Triggers.
+
+    Maak gebruik van transacties (COMMIT en ROLLBACK).
+
+    Implementeer indexes voor betere prestaties.
+
+    Zorg voor databasebeveiliging en correcte toegangsrechten.
+
+6. Website-integratie
+
+Uiteindelijk moet je database gekoppeld worden aan een website.
+All your events, one smart dashboard. by Akansha Gupta on Dribbble
+ 
+Check out UI Design by Ghulam on Dribbble
+ 
+Event Management Dashboard - Web App, SaaS by Adegbite boluwatife  on Dribbble
+ 
+
+De website moet minimaal bestaan uit:
+
+    Homepage met evenementen.
+
+    Evenementdetailpagina.
+
+    Registratie- en inlogpagina.
+
+    Ticketbestelpagina.
+
+    Winkelwagen en afrekenpagina.
+
+    Mijn account-pagina.
+
+    Admin-dashboard.
+
+Je kunt bijvoorbeeld deze technologieën gebruiken:
+
+Onderdeel
+	
+
+Technologie
+
+Database
+	
+
+MySQL of PostgreSQL
+
+Backend
+	
+
+PHP, Laravel of Node.js
+
+Frontend
+	
+
+HTML, CSS, JavaScript
+
+API
+	
+
+REST API
+
+Databasebeheer
+	
+
+phpMyAdmin of DBeaver
+7. In te leveren onderdelen
+
+Je levert uiteindelijk het volgende op:
+
+    Een volledig ERD-diagram.
+
+    Een SQL-bestand waarmee de volledige database aangemaakt wordt.
+
+    Een SQL-bestand met testgegevens.
+
+    Minimaal 10 geavanceerde SQL-query's.
+
+    De benodigde Views, Triggers en Stored Procedures.
+
+    Een werkende website die gegevens uit de database haalt.
+
+    Een admin-dashboard waarmee gegevens aangepast kunnen worden.
+
+    Een documentatiebestand waarin je de database en relaties uitlegt.
+
+8. Extra moeilijke uitdagingen
+
+Wil je het jezelf echt moeilijk maken? Voeg dan deze uitdagingen toe:
+
+    Een ticketsysteem met tijdelijke reserveringen.
+    Automatische vrijgave van niet-betaalde reserveringen.
+    Een kortingscodesysteem.
+    Een wachtlijst voor uitverkochte evenementen.
+    Een auditlog waarin alle belangrijke wijzigingen worden opgeslagen.
+    Een dashboard met statistieken over omzet en bezoekers.
+    Een API waarmee externe applicaties evenementen kunnen ophalen.
+    Een systeem met verschillende toegangsrechten voor beheerders en organisatoren.
+
+Mijn advies: maak het project zo
+
+Bouw het niet alleen als een databaseopdracht, maar als een echt softwareproject.
+
+De moeilijkheid zit vooral in:
+
+    Het goed ontwerpen van de relaties.
+
+    Het voorkomen van dubbele of inconsistente gegevens.
+
+    Het correct verwerken van bestellingen en betalingen.
+
+    Het voorkomen van dubbele ticketverkoop bij gelijktijdige bestellingen.
+
+    Het efficiënt ophalen van gegevens voor de website.
+
+Extra uitdaging: ontwerp eerst de volledige database zonder website te bouwen. Zorg dat alle relaties, constraints en query's werken. Bouw daarna pas de website en koppel deze aan je database.
+
+Zo heb je een serieus project waarmee je je SQL- en databasevaardigheden op gevorderd niveau kunt testen.
+
+geef voor alle tabellen de data die er in moet
+
+Hieronder krijg je een complete dataset voor het Eventify-project. Ik geef je per tabel de kolommen, het datatype, voorbeeldgegevens en de onderlinge koppelingen.
+
+Ik gebruik MySQL 8.0 als uitgangspunt. De gegevens zijn fictief, maar realistisch opgezet.
+
+We maken de database met voldoende gegevens om later:
+
+    Meerdere evenementen op de website te tonen.
+
+    Gebruikers en organisatoren te beheren.
+
+    Bestellingen en betalingen te testen.
+
+    Omzetrapportages te maken.
+
+    Complexe SQL-queries uit te voeren.
+
+    Relaties tussen alle tabellen te testen.
+
+1. Overzicht van de database
+
+We gebruiken 14 tabellen:
+
+Tabel
+	
+
+Aantal voorbeeldrecords
+
+users
+	
+
+10
+
+user_profiles
+	
+
+10
+
+roles
+	
+
+4
+
+user_roles
+	
+
+11
+
+organizers
+	
+
+5
+
+locations
+	
+
+6
+
+categories
+	
+
+8
+
+events
+	
+
+12
+
+event_categories
+	
+
+18
+
+tickets
+	
+
+24
+
+orders
+	
+
+12
+
+order_items
+	
+
+18
+
+payments
+	
+
+14
+
+reviews
+	
+
+10
+14 gekoppelde tabellen
+2. De tabellen en hun gegevens
+Tabel 1: users
+
+Hierin staan alle gebruikers die een account hebben op Eventify.
+
+Kolom
+	
+
+Datatype
+	
+
+Betekenis
+
+user_id
+	
+
+INT, PK, AUTO_INCREMENT
+	
+
+Unieke gebruikers-ID
+
+first_name
+	
+
+VARCHAR(50)
+	
+
+Voornaam
+
+last_name
+	
+
+VARCHAR(50)
+	
+
+Achternaam
+
+email
+	
+
+VARCHAR(100), UNIQUE
+	
+
+E-mailadres
+
+password_hash
+	
+
+VARCHAR(255)
+	
+
+Gehashte wachtwoordwaarde
+
+phone
+	
+
+VARCHAR(20)
+	
+
+Telefoonnummer
+
+status
+	
+
+ENUM
+	
+
+active, blocked, pending
+
+created_at
+	
+
+DATETIME
+	
+
+Registratiedatum
+
+Voorbeeldgegevens:
+
+user_id
+	
+
+first_name
+	
+
+last_name
+	
+
+email
+	
+
+status
+
+1
+	
+
+Jan
+	
+
+Jansen
+	
+
+jan@example.nl
+	
+
+active
+
+2
+	
+
+Lisa
+	
+
+de Vries
+	
+
+lisa@example.nl
+	
+
+active
+
+3
+	
+
+Mohammed
+	
+
+Ali
+	
+
+mohammed@example.nl
+	
+
+active
+
+4
+	
+
+Sophie
+	
+
+Bakker
+	
+
+sophie@example.nl
+	
+
+active
+
+5
+	
+
+Thomas
+	
+
+Visser
+	
+
+thomas@example.nl
+	
+
+active
+
+6
+	
+
+Emma
+	
+
+Smit
+	
+
+emma@example.nl
+	
+
+active
+
+7
+	
+
+Daan
+	
+
+Peters
+	
+
+daan@example.nl
+	
+
+blocked
+
+8
+	
+
+Noah
+	
+
+Bos
+	
+
+noah@example.nl
+	
+
+active
+
+9
+	
+
+Julia
+	
+
+Meijer
+	
+
+julia@example.nl
+	
+
+pending
+
+10
+	
+
+Lucas
+	
+
+van Dijk
+	
+
+lucas@example.nl
+	
+
+active
+Tabel 2: user_profiles
+
+Aanvullende persoonsgegevens van een gebruiker. Iedere gebruiker heeft maximaal één profiel.
+
+Kolom
+	
+
+Datatype
+
+profile_id
+	
+
+INT, PK
+
+user_id
+	
+
+INT, FK, UNIQUE
+
+date_of_birth
+	
+
+DATE
+
+gender
+	
+
+VARCHAR(20)
+
+street
+	
+
+VARCHAR(100)
+
+house_number
+	
+
+VARCHAR(10)
+
+postal_code
+	
+
+VARCHAR(10)
+
+city
+	
+
+VARCHAR(50)
+
+country
+	
+
+VARCHAR(50)
+
+profile_id
+	
+
+user_id
+	
+
+date_of_birth
+	
+
+city
+	
+
+country
+
+1
+	
+
+1
+	
+
+1998-04-12
+	
+
+Utrecht
+	
+
+Nederland
+
+2
+	
+
+2
+	
+
+2001-08-22
+	
+
+Amsterdam
+	
+
+Nederland
+
+3
+	
+
+3
+	
+
+1995-02-10
+	
+
+Rotterdam
+	
+
+Nederland
+
+4
+	
+
+4
+	
+
+2000-11-05
+	
+
+Den Haag
+	
+
+Nederland
+
+5
+	
+
+5
+	
+
+1997-06-18
+	
+
+Utrecht
+	
+
+Nederland
+
+6
+	
+
+6
+	
+
+2002-01-30
+	
+
+Eindhoven
+	
+
+Nederland
+
+7
+	
+
+7
+	
+
+1996-09-14
+	
+
+Breda
+	
+
+Nederland
+
+8
+	
+
+8
+	
+
+1999-03-25
+	
+
+Groningen
+	
+
+Nederland
+
+9
+	
+
+9
+	
+
+2003-12-02
+	
+
+Amsterdam
+	
+
+Nederland
+
+10
+	
+
+10
+	
+
+1994-07-19
+	
+
+Arnhem
+	
+
+Nederland
+Tabel 3: roles
+
+Hierin staan de verschillende gebruikersrollen.
+
+role_id
+	
+
+role_name
+	
+
+description
+
+1
+	
+
+admin
+	
+
+Volledige toegang
+
+2
+	
+
+organizer
+	
+
+Beheer eigen evenementen
+
+3
+	
+
+customer
+	
+
+Kan tickets bestellen
+
+4
+	
+
+moderator
+	
+
+Beheer reviews en meldingen
+Tabel 4: user_roles
+
+Deze tabel koppelt gebruikers aan rollen. Eén gebruiker kan meerdere rollen hebben.
+
+user_role_id
+	
+
+user_id
+	
+
+role_id
+
+1
+	
+
+1
+	
+
+1
+
+2
+	
+
+1
+	
+
+3
+
+3
+	
+
+2
+	
+
+3
+
+4
+	
+
+3
+	
+
+2
+
+5
+	
+
+3
+	
+
+3
+
+6
+	
+
+4
+	
+
+3
+
+7
+	
+
+5
+	
+
+2
+
+8
+	
+
+6
+	
+
+3
+
+9
+	
+
+7
+	
+
+3
+
+10
+	
+
+8
+	
+
+4
+
+11
+	
+
+10
+	
+
+3
+Tabel 5: organizers
+
+Hierin staan de organisatoren die evenementen mogen aanmaken.
+
+Kolom
+	
+
+Datatype
+	
+
+Betekenis
+
+organizer_id
+	
+
+INT, PK
+	
+
+Unieke organisator-ID
+
+user_id
+	
+
+INT, FK
+	
+
+Gekoppelde gebruikersaccount
+
+company_name
+	
+
+VARCHAR(100)
+	
+
+Bedrijfsnaam
+
+description
+	
+
+TEXT
+	
+
+Beschrijving
+
+website
+	
+
+VARCHAR(255)
+	
+
+Website
+
+contact_email
+	
+
+VARCHAR(100)
+	
+
+Contactadres
+
+verified
+	
+
+BOOLEAN
+	
+
+Is organisator gecontroleerd?
+
+organizer_id
+	
+
+user_id
+	
+
+company_name
+	
+
+verified
+
+1
+	
+
+3
+	
+
+Music Events NL
+	
+
+1
+
+2
+	
+
+5
+	
+
+Festival Productions
+	
+
+1
+
+3
+	
+
+1
+	
+
+Tech Conferences
+	
+
+1
+
+4
+	
+
+8
+	
+
+Sports Organization
+	
+
+0
+
+5
+	
+
+10
+	
+
+Creative Events
+	
+
+1
+Tabel 6: locations
+
+Hier staan de locaties waar evenementen plaatsvinden.
+
+Kolom
+	
+
+Datatype
+
+location_id
+	
+
+INT, PK
+
+location_name
+	
+
+VARCHAR(100)
+
+street
+	
+
+VARCHAR(100)
+
+house_number
+	
+
+VARCHAR(10)
+
+postal_code
+	
+
+VARCHAR(10)
+
+city
+	
+
+VARCHAR(50)
+
+country
+	
+
+VARCHAR(50)
+
+capacity
+	
+
+INT
+
+location_id
+	
+
+location_name
+	
+
+city
+	
+
+capacity
+
+1
+	
+
+Jaarbeurs Utrecht
+	
+
+Utrecht
+	
+
+5000
+
+2
+	
+
+Ziggo Dome
+	
+
+Amsterdam
+	
+
+17000
+
+3
+	
+
+Ahoy Rotterdam
+	
+
+Rotterdam
+	
+
+15000
+
+4
+	
+
+AFAS Live
+	
+
+Amsterdam
+	
+
+6000
+
+5
+	
+
+Brabanthallen
+	
+
+Den Bosch
+	
+
+10000
+
+6
+	
+
+TivoliVredenburg
+	
+
+Utrecht
+	
+
+2000
+Tabel 7: categories
+
+Hierin staan de categorieën waarin evenementen worden ingedeeld.
+
+Kolom
+	
+
+Datatype
+
+category_id
+	
+
+INT, PK
+
+category_name
+	
+
+VARCHAR(50), UNIQUE
+
+description
+	
+
+TEXT
+
+category_id
+	
+
+category_name
+	
+
+description
+
+1
+	
+
+Muziek
+	
+
+Concerten en muziekfestivals
+
+2
+	
+
+Sport
+	
+
+Sportwedstrijden en toernooien
+
+3
+	
+
+Technologie
+	
+
+Technologie en innovatie
+
+4
+	
+
+Zakelijk
+	
+
+Zakelijke bijeenkomsten
+
+5
+	
+
+Kunst
+	
+
+Kunst en cultuur
+
+6
+	
+
+Food
+	
+
+Eten en culinaire evenementen
+
+7
+	
+
+Gaming
+	
+
+Gaming en esports
+
+8
+	
+
+Educatie
+	
+
+Workshops en opleidingen
+Tabel 8: events
+
+Dit is een van de belangrijkste tabellen. Hierin staan alle evenementen die op de website getoond worden.
+
+Kolom
+	
+
+Datatype
+
+event_id
+	
+
+INT, PK
+
+organizer_id
+	
+
+INT, FK
+
+location_id
+	
+
+INT, FK
+
+title
+	
+
+VARCHAR(150)
+
+description
+	
+
+TEXT
+
+start_date
+	
+
+DATETIME
+
+end_date
+	
+
+DATETIME
+
+status
+	
+
+ENUM('draft','published','cancelled','completed')
+
+image_url
+	
+
+VARCHAR(255)
+
+created_at
+	
+
+DATETIME
+
+Voorbeeldgegevens:
+
+event_id
+	
+
+organizer_id
+	
+
+location_id
+	
+
+title
+	
+
+start_date
+	
+
+status
+
+1
+	
+
+1
+	
+
+2
+	
+
+Summer Music Festival
+	
+
+2027-06-12 14:00
+	
+
+published
+
+2
+	
+
+2
+	
+
+1
+	
+
+Dutch Tech Expo
+	
+
+2027-03-20 09:00
+	
+
+published
+
+3
+	
+
+3
+	
+
+3
+	
+
+Future of AI
+	
+
+2027-04-15 10:00
+	
+
+published
+
+4
+	
+
+1
+	
+
+4
+	
+
+Electronic Night
+	
+
+2027-05-08 21:00
+	
+
+published
+
+5
+	
+
+4
+	
+
+5
+	
+
+Football Cup 2027
+	
+
+2027-07-10 12:00
+	
+
+published
+
+6
+	
+
+5
+	
+
+6
+	
+
+Art & Culture Day
+	
+
+2027-02-14 11:00
+	
+
+published
+
+7
+	
+
+2
+	
+
+1
+	
+
+Startup Conference
+	
+
+2027-09-18 09:00
+	
+
+published
+
+8
+	
+
+1
+	
+
+2
+	
+
+Rock Festival
+	
+
+2027-08-21 13:00
+	
+
+published
+
+9
+	
+
+5
+	
+
+6
+	
+
+Food Festival Utrecht
+	
+
+2027-06-25 12:00
+	
+
+published
+
+10
+	
+
+3
+	
+
+3
+	
+
+Gaming Championship
+	
+
+2027-10-02 10:00
+	
+
+published
+
+11
+	
+
+4
+	
+
+5
+	
+
+Basketball Tournament
+	
+
+2027-11-14 10:00
+	
+
+draft
+
+12
+	
+
+2
+	
+
+4
+	
+
+Digital Innovation Day
+	
+
+2027-12-05 09:00
+	
+
+published
+Tabel 9: event_categories
+
+Deze tussentabel maakt het mogelijk om meerdere categorieën aan één evenement te koppelen.
+
+Kolom
+	
+
+Datatype
+
+event_category_id
+	
+
+INT, PK
+
+event_id
+	
+
+INT, FK
+
+category_id
+	
+
+INT, FK
+
+event_category_id
+	
+
+event_id
+	
+
+category_id
+
+1
+	
+
+1
+	
+
+1
+
+2
+	
+
+1
+	
+
+6
+
+3
+	
+
+2
+	
+
+3
+
+4
+	
+
+2
+	
+
+4
+
+5
+	
+
+3
+	
+
+3
+
+6
+	
+
+3
+	
+
+8
+
+7
+	
+
+4
+	
+
+1
+
+8
+	
+
+4
+	
+
+7
+
+9
+	
+
+5
+	
+
+2
+
+10
+	
+
+6
+	
+
+5
+
+11
+	
+
+6
+	
+
+8
+
+12
+	
+
+7
+	
+
+4
+
+13
+	
+
+7
+	
+
+3
+
+14
+	
+
+8
+	
+
+1
+
+15
+	
+
+9
+	
+
+6
+
+16
+	
+
+10
+	
+
+7
+
+17
+	
+
+11
+	
+
+2
+
+18
+	
+
+12
+	
+
+3
+Tabel 10: tickets
+
+Hierin staan de verschillende ticketsoorten per evenement.
+
+Kolom
+	
+
+Datatype
+
+ticket_id
+	
+
+INT, PK
+
+event_id
+	
+
+INT, FK
+
+ticket_name
+	
+
+VARCHAR(100)
+
+price
+	
+
+DECIMAL(10,2)
+
+quantity_total
+	
+
+INT
+
+quantity_sold
+	
+
+INT
+
+sales_start
+	
+
+DATETIME
+
+sales_end
+	
+
+DATETIME
+
+status
+	
+
+ENUM('available','sold_out','inactive')
+
+We maken twee soorten tickets per evenement: standaard en VIP.
+
+ticket_id
+	
+
+event_id
+	
+
+ticket_name
+	
+
+price
+	
+
+quantity_total
+	
+
+quantity_sold
+
+1
+	
+
+1
+	
+
+Regular
+	
+
+45.00
+	
+
+4000
+	
+
+1200
+
+2
+	
+
+1
+	
+
+VIP
+	
+
+95.00
+	
+
+1000
+	
+
+250
+
+3
+	
+
+2
+	
+
+Regular
+	
+
+25.00
+	
+
+1500
+	
+
+400
+
+4
+	
+
+2
+	
+
+VIP
+	
+
+60.00
+	
+
+300
+	
+
+80
+
+5
+	
+
+3
+	
+
+Regular
+	
+
+35.00
+	
+
+2000
+	
+
+600
+
+6
+	
+
+3
+	
+
+VIP
+	
+
+85.00
+	
+
+500
+	
+
+120
+
+7
+	
+
+4
+	
+
+Regular
+	
+
+30.00
+	
+
+4000
+	
+
+2800
+
+8
+	
+
+4
+	
+
+VIP
+	
+
+75.00
+	
+
+500
+	
+
+450
+
+9
+	
+
+5
+	
+
+Regular
+	
+
+20.00
+	
+
+8000
+	
+
+3000
+
+10
+	
+
+5
+	
+
+VIP
+	
+
+50.00
+	
+
+1000
+	
+
+400
+
+11
+	
+
+6
+	
+
+Regular
+	
+
+15.00
+	
+
+1500
+	
+
+200
+
+12
+	
+
+6
+	
+
+VIP
+	
+
+40.00
+	
+
+200
+	
+
+30
+
+13
+	
+
+7
+	
+
+Regular
+	
+
+55.00
+	
+
+2000
+	
+
+900
+
+14
+	
+
+7
+	
+
+VIP
+	
+
+120.00
+	
+
+300
+	
+
+100
+
+15
+	
+
+8
+	
+
+Regular
+	
+
+50.00
+	
+
+5000
+	
+
+3500
+
+16
+	
+
+8
+	
+
+VIP
+	
+
+110.00
+	
+
+1000
+	
+
+800
+
+17
+	
+
+9
+	
+
+Regular
+	
+
+12.50
+	
+
+1800
+	
+
+700
+
+18
+	
+
+9
+	
+
+VIP
+	
+
+35.00
+	
+
+200
+	
+
+50
+
+19
+	
+
+10
+	
+
+Regular
+	
+
+18.00
+	
+
+3000
+	
+
+1500
+
+20
+	
+
+10
+	
+
+VIP
+	
+
+65.00
+	
+
+400
+	
+
+150
+
+21
+	
+
+11
+	
+
+Regular
+	
+
+22.00
+	
+
+7000
+	
+
+0
+
+22
+	
+
+11
+	
+
+VIP
+	
+
+55.00
+	
+
+500
+	
+
+0
+
+23
+	
+
+12
+	
+
+Regular
+	
+
+40.00
+	
+
+2500
+	
+
+600
+
+24
+	
+
+12
+	
+
+VIP
+	
+
+90.00
+	
+
+400
+	
+
+100
+
+Let op: quantity_sold is de verkochte hoeveelheid, niet de resterende voorraad. Zorg ervoor dat je database later controleert dat quantity_sold nooit groter wordt dan quantity_total.
+Tabel 11: orders
+
+Hierin staan alle bestellingen die gebruikers hebben geplaatst.
+
+Kolom
+	
+
+Datatype
+
+order_id
+	
+
+INT, PK
+
+user_id
+	
+
+INT, FK
+
+order_number
+	
+
+VARCHAR(30), UNIQUE
+
+order_date
+	
+
+DATETIME
+
+total_amount
+	
+
+DECIMAL(10,2)
+
+status
+	
+
+ENUM('pending','paid','cancelled','refunded')
+
+order_id
+	
+
+user_id
+	
+
+order_number
+	
+
+order_date
+	
+
+total_amount
+	
+
+status
+
+1
+	
+
+1
+	
+
+EVT-2027-0001
+	
+
+2026-11-01 10:30
+	
+
+90.00
+	
+
+paid
+
+2
+	
+
+2
+	
+
+EVT-2027-0002
+	
+
+2026-11-01 11:15
+	
+
+95.00
+	
+
+paid
+
+3
+	
+
+3
+	
+
+EVT-2027-0003
+	
+
+2026-11-02 09:20
+	
+
+120.00
+	
+
+paid
+
+4
+	
+
+4
+	
+
+EVT-2027-0004
+	
+
+2026-11-02 14:45
+	
+
+75.00
+	
+
+pending
+
+5
+	
+
+5
+	
+
+EVT-2027-0005
+	
+
+2026-11-03 12:10
+	
+
+110.00
+	
+
+paid
+
+6
+	
+
+6
+	
+
+EVT-2027-0006
+	
+
+2026-11-03 15:30
+	
+
+50.00
+	
+
+cancelled
+
+7
+	
+
+8
+	
+
+EVT-2027-0007
+	
+
+2026-11-04 10:00
+	
+
+180.00
+	
+
+paid
+
+8
+	
+
+10
+	
+
+EVT-2027-0008
+	
+
+2026-11-04 13:20
+	
+
+60.00
+	
+
+paid
+
+9
+	
+
+1
+	
+
+EVT-2027-0009
+	
+
+2026-11-04 16:45
+	
+
+130.00
+	
+
+paid
+
+10
+	
+
+2
+	
+
+EVT-2027-0010
+	
+
+2026-11-05 08:30
+	
+
+45.00
+	
+
+pending
+
+11
+	
+
+3
+	
+
+EVT-2027-0011
+	
+
+2026-11-05 09:15
+	
+
+200.00
+	
+
+paid
+
+12
+	
+
+5
+	
+
+EVT-2027-0012
+	
+
+2026-11-05 11:00
+	
+
+35.00
+	
+
+refunded
+Tabel 12: order_items
+
+Een bestelling kan meerdere verschillende tickets bevatten. Daarom gebruiken we deze tussentabel.
+
+Kolom
+	
+
+Datatype
+
+order_item_id
+	
+
+INT, PK
+
+order_id
+	
+
+INT, FK
+
+ticket_id
+	
+
+INT, FK
+
+quantity
+	
+
+INT
+
+unit_price
+	
+
+DECIMAL(10,2)
+
+subtotal
+	
+
+DECIMAL(10,2)
+
+Voorbeeldgegevens:
+
+order_item_id
+	
+
+order_id
+	
+
+ticket_id
+	
+
+quantity
+	
+
+unit_price
+	
+
+subtotal
+
+1
+	
+
+1
+	
+
+1
+	
+
+2
+	
+
+45.00
+	
+
+90.00
+
+2
+	
+
+2
+	
+
+2
+	
+
+1
+	
+
+95.00
+	
+
+95.00
+
+3
+	
+
+3
+	
+
+5
+	
+
+2
+	
+
+35.00
+	
+
+70.00
+
+4
+	
+
+3
+	
+
+6
+	
+
+1
+	
+
+50.00
+	
+
+50.00
+
+5
+	
+
+4
+	
+
+8
+	
+
+1
+	
+
+75.00
+	
+
+75.00
+
+6
+	
+
+5
+	
+
+15
+	
+
+2
+	
+
+50.00
+	
+
+100.00
+
+7
+	
+
+5
+	
+
+16
+	
+
+1
+	
+
+10.00
+	
+
+10.00
+
+8
+	
+
+6
+	
+
+9
+	
+
+2
+	
+
+25.00
+	
+
+50.00
+
+9
+	
+
+7
+	
+
+13
+	
+
+2
+	
+
+55.00
+	
+
+110.00
+
+10
+	
+
+7
+	
+
+14
+	
+
+1
+	
+
+70.00
+	
+
+70.00
+
+11
+	
+
+8
+	
+
+3
+	
+
+2
+	
+
+25.00
+	
+
+50.00
+
+12
+	
+
+8
+	
+
+4
+	
+
+1
+	
+
+10.00
+	
+
+10.00
+
+13
+	
+
+9
+	
+
+7
+	
+
+2
+	
+
+30.00
+	
+
+60.00
+
+14
+	
+
+9
+	
+
+8
+	
+
+1
+	
+
+70.00
+	
+
+70.00
+
+15
+	
+
+10
+	
+
+1
+	
+
+1
+	
+
+45.00
+	
+
+45.00
+
+16
+	
+
+11
+	
+
+19
+	
+
+2
+	
+
+18.00
+	
+
+36.00
+
+17
+	
+
+11
+	
+
+20
+	
+
+1
+	
+
+164.00
+	
+
+164.00
+
+18
+	
+
+12
+	
+
+17
+	
+
+2
+	
+
+17.50
+	
+
+35.00
+
+Belangrijk: de voorbeeldbedragen hierboven zijn bedoeld om de structuur te laten zien. Bij het daadwerkelijk invoeren moet subtotal = quantity × unit_price gelden en moeten de ticketprijzen overeenkomen met de tabel tickets. Gebruik dus de ticketprijzen als leidend uitgangspunt en pas de voorbeeldbedragen aan waar nodig.
+Tabel 13: payments
+
+Hierin staan de betalingspogingen van gebruikers.
+
+Eén bestelling kan meerdere betalingspogingen hebben. Bijvoorbeeld wanneer de eerste betaling mislukt en de tweede betaling wel lukt.
+
+Kolom
+	
+
+Datatype
+
+payment_id
+	
+
+INT, PK
+
+order_id
+	
+
+INT, FK
+
+transaction_id
+	
+
+VARCHAR(100), UNIQUE
+
+payment_method
+	
+
+ENUM('ideal','creditcard','paypal','bancontact')
+
+amount
+	
+
+DECIMAL(10,2)
+
+payment_status
+	
+
+ENUM('pending','successful','failed','refunded')
+
+payment_date
+	
+
+DATETIME
+
+Voorbeeldgegevens:
+
+payment_id
+	
+
+order_id
+	
+
+transaction_id
+	
+
+payment_method
+	
+
+amount
+	
+
+payment_status
+
+1
+	
+
+1
+	
+
+TXN-10001
+	
+
+ideal
+	
+
+90.00
+	
+
+successful
+
+2
+	
+
+2
+	
+
+TXN-10002
+	
+
+creditcard
+	
+
+95.00
+	
+
+successful
+
+3
+	
+
+3
+	
+
+TXN-10003
+	
+
+paypal
+	
+
+120.00
+	
+
+successful
+
+4
+	
+
+4
+	
+
+TXN-10004
+	
+
+ideal
+	
+
+75.00
+	
+
+pending
+
+5
+	
+
+5
+	
+
+TXN-10005
+	
+
+ideal
+	
+
+110.00
+	
+
+successful
+
+6
+	
+
+6
+	
+
+TXN-10006
+	
+
+creditcard
+	
+
+50.00
+	
+
+failed
+
+7
+	
+
+7
+	
+
+TXN-10007
+	
+
+paypal
+	
+
+180.00
+	
+
+successful
+
+8
+	
+
+8
+	
+
+TXN-10008
+	
+
+ideal
+	
+
+60.00
+	
+
+successful
+
+9
+	
+
+9
+	
+
+TXN-10009
+	
+
+ideal
+	
+
+130.00
+	
+
+successful
+
+10
+	
+
+10
+	
+
+TXN-10010
+	
+
+paypal
+	
+
+45.00
+	
+
+failed
+
+11
+	
+
+10
+	
+
+TXN-10011
+	
+
+ideal
+	
+
+45.00
+	
+
+pending
+
+12
+	
+
+11
+	
+
+TXN-10012
+	
+
+creditcard
+	
+
+200.00
+	
+
+successful
+
+13
+	
+
+12
+	
+
+TXN-10013
+	
+
+ideal
+	
+
+35.00
+	
+
+refunded
+
+14
+	
+
+12
+	
+
+TXN-10014
+	
+
+paypal
+	
+
+35.00
+	
+
+successful
+Tabel 14: reviews
+
+Hierin kunnen gebruikers evenementen beoordelen.
+
+Kolom
+	
+
+Datatype
+
+review_id
+	
+
+INT, PK
+
+user_id
+	
+
+INT, FK
+
+event_id
+	
+
+INT, FK
+
+rating
+	
+
+TINYINT
+
+review_text
+	
+
+TEXT
+
+created_at
+	
+
+DATETIME
+
+status
+	
+
+ENUM('published','hidden','reported')
+
+Voorbeeldgegevens:
+
+review_id
+	
+
+user_id
+	
+
+event_id
+	
+
+rating
+	
+
+review_text
+	
+
+status
+
+1
+	
+
+1
+	
+
+1
+	
+
+5
+	
+
+Geweldig festival!
+	
+
+published
+
+2
+	
+
+2
+	
+
+2
+	
+
+4
+	
+
+Interessante presentaties.
+	
+
+published
+
+3
+	
+
+3
+	
+
+3
+	
+
+5
+	
+
+Veel geleerd over AI.
+	
+
+published
+
+4
+	
+
+4
+	
+
+4
+	
+
+3
+	
+
+Goede muziek, maar erg druk.
+	
+
+published
+
+5
+	
+
+5
+	
+
+5
+	
+
+4
+	
+
+Goed georganiseerd.
+	
+
+published
+
+6
+	
+
+6
+	
+
+6
+	
+
+5
+	
+
+Prachtige kunstwerken.
+	
+
+published
+
+7
+	
+
+8
+	
+
+7
+	
+
+4
+	
+
+Interessante sprekers.
+	
+
+published
+
+8
+	
+
+10
+	
+
+8
+	
+
+5
+	
+
+Fantastische sfeer!
+	
+
+published
+
+9
+	
+
+1
+	
+
+9
+	
+
+3
+	
+
+Leuk, maar weinig keuze.
+	
+
+hidden
+
+10
+	
+
+2
+	
+
+10
+	
+
+5
+	
+
+Superleuk gaming-evenement.
+	
+
+published
+3. Belangrijke relaties tussen alle tabellen
+
+Dit is hoe de tabellen aan elkaar gekoppeld moeten worden:
+
+Gebruikers en rechten
+
+    users.user_id → user_profiles.user_id
+
+    users.user_id → user_roles.user_id
+
+    roles.role_id → user_roles.role_id
+
+    users.user_id → organizers.user_id
+
+Evenementen
+
+    organizers.organizer_id → events.organizer_id
+
+    locations.location_id → events.location_id
+
+    events.event_id → event_categories.event_id
+
+    categories.category_id → event_categories.category_id
+
+    events.event_id → tickets.event_id
+
+Bestellingen en betalingen
+
+    users.user_id → orders.user_id
+
+    orders.order_id → order_items.order_id
+
+    tickets.ticket_id → order_items.ticket_id
+
+    orders.order_id → payments.order_id
+
+Reviews
+
+    users.user_id → reviews.user_id
+
+    events.event_id → reviews.event_id
+
+4. Belangrijke database-regels
+
+Om de database professioneel te maken, raad ik deze extra regels aan:
+
+Regel
+	
+
+Implementatie
+
+Geen dubbele e-mailadressen
+	
+
+UNIQUE
+
+Geen dubbele gebruikersrollen
+	
+
+UNIQUE(user_id, role_id)
+
+Geen dubbele eventcategorieën
+	
+
+UNIQUE(event_id, category_id)
+
+Reviews maximaal één keer
+	
+
+UNIQUE(user_id, event_id)
+
+Reviewscore tussen 1 en 5
+	
+
+CHECK
+
+Ticketprijs mag niet negatief zijn
+	
+
+CHECK
+
+Ticketvoorraad mag niet negatief zijn
+	
+
+CHECK
+
+Bestelbedrag mag niet negatief zijn
+	
+
+CHECK
+
+Let op bij het invoeren: de voorbeeldgegevens zijn een startdataset. Controleer vóór het importeren dat de bedragen van orders, order_items en payments overeenkomen. Bijvoorbeeld: order 3 moet op basis van de opgegeven ticketprijzen €155 bedragen. De voorbeeldgegevens bevatten bewust ook situaties die je kunt gebruiken om je validatie te testen.
+5. Mijn aanbevolen uitbreidingen
+
+Als je het project echt op gevorderd niveau wilt brengen, zou ik nog vier tabellen toevoegen:
+
+Tabel
+	
+
+Functie
+
+discount_codes
+	
+
+Kortingscodes beheren
+
+order_discounts
+	
+
+Kortingen koppelen aan bestellingen
+
+audit_logs
+	
+
+Alle belangrijke wijzigingen registreren
+
+notifications
+	
+
+Meldingen naar gebruikers versturen
+
+Hiermee wordt je database een stuk realistischer en uitdagender.
+6. Volgorde waarin je de database moet vullen
+
+Omdat tabellen afhankelijk zijn van andere tabellen, moet je ze in de juiste volgorde invoeren.
+
+    roles
+
+    users
+
+    user_profiles
+
+    user_roles
+
+    organizers
+
+    locations
+
+    categories
+
+    events
+
+    event_categories
+
+    tickets
+
+    orders
+
+    order_items
+
+    payments
+
+    reviews
+
+Mijn advies: gebruik deze dataset als basis voor je volledige MySQL-project. Maak eerst alle tabellen met hun PK's, FK's en constraints. Vul daarna de gegevens in en test vervolgens of alle relaties correct werken.
+
+Als je wilt, kan ik hierna ook één compleet uitvoerbaar MySQL .sql-script maken met alle 14 tabellen, relaties en INSERT-statements, zodat je de volledige database in één keer kunt importeren in phpMyAdmin of MySQL Workbench.
+
+CREATE TABLE categories
+(
+  category_id   INT         NOT NULL,
+  category_name VARCHAR(50) NULL     DEFAULT (UNIQUE),
+  description   TEXT        NULL    ,
+  PRIMARY KEY (category_id)
+);
+
+CREATE TABLE event_categories
+(
+  event_category_id INT NULL     DEFAULT (AUTO_INCREMENT),
+  event_id          INT NOT NULL,
+  category_id       INT NOT NULL
+);
+
+CREATE TABLE events
+(
+  event_id     INT                                               NOT NULL,
+  organizer_id INT                                               NOT NULL DEFAULT (AUTO_INCREMENT) COMMENT 'Unieke organisator-ID',
+  location_id  INT                                               NOT NULL DEFAULT (AUTO_INCREMENT),
+  title        VARCHAR(150)                                      NULL    ,
+  description  TEXT                                              NULL    ,
+  start_date   DATETIME                                          NULL    ,
+  end_date     DATETIME                                          NULL    ,
+  status       ENUM('draft','published','cancelled','completed') NULL    ,
+  image_url    VARCHAR(255)                                      NULL    ,
+  created_at   VARCHAR(255)                                      NULL    ,
+  PRIMARY KEY (event_id)
+);
+
+CREATE TABLE locations
+(
+  location_id   INT          NOT NULL DEFAULT (AUTO_INCREMENT),
+  location_name VARCHAR(100) NULL    ,
+  street        VARCHAR(100) NULL    ,
+  house_number  VARCHAR(10)  NULL    ,
+  postal_code   VARCHAR(10)  NULL    ,
+  city          VARCHAR(50)  NULL    ,
+  country       VARCHAR(50)  NULL    ,
+  capacity      INT          NULL    ,
+  PRIMARY KEY (location_id)
+);
+
+CREATE TABLE order_items
+(
+  order_items_id INT           NOT NULL DEFAULT (AUTO_INCREMENT),
+  order_id       INT           NOT NULL DEFAULT (AUTO_INCREMENT),
+  ticket_id      INT           NOT NULL DEFAULT (AUTO_INCREMENT),
+  quantity       INT           NULL    ,
+  unit_price     DECIMAL(10,2) NULL    ,
+  subtotal       DECIMAL(10,2) NULL    ,
+  PRIMARY KEY (order_items_id)
+);
+
+CREATE TABLE orders
+(
+  order_id     INT                                           NOT NULL DEFAULT (AUTO_INCREMENT),
+  user_id      INT                                           NOT NULL DEFAULT (AUTO_INCREMENT),
+  order_number VARCHAR(30)                                   NULL     DEFAULT (UNIQUE),
+  order_date   DATETIME                                      NULL    ,
+  total_amount DECIMAL(10,2)                                 NULL    ,
+  status       ENUM('pending','paid','cancelled','refunded') NULL    ,
+  PRIMARY KEY (order_id)
+);
+
+CREATE TABLE organizers
+(
+  organizer_id  INT          NOT NULL DEFAULT (AUTO_INCREMENT) COMMENT 'Unieke organisator-ID',
+  user_id       INT          NOT NULL DEFAULT (AUTO_INCREMENT) COMMENT 'Gekoppelde gebruikersaccount',
+  company_name  VARCHAR(100) NULL     COMMENT 'Bedrijfsnaam',
+  description   TEXT         NULL     COMMENT 'Beschrijving',
+  website       VARCHAR(255) NULL     COMMENT 'Website',
+  contact_email VARCHAR(100) NULL     COMMENT 'Contactadres',
+  verified      BOOLEAN      NULL     COMMENT 'Is organisator gecontroleerd?',
+  PRIMARY KEY (organizer_id)
+);
+
+CREATE TABLE payments
+(
+  payment_id     INT                                              NOT NULL DEFAULT (AUTO_INCREMENT),
+  order_id       INT                                              NOT NULL DEFAULT (AUTO_INCREMENT),
+  transaction_id VARCHAR(100)                                     NULL     DEFAULT (UNIQUW),
+  payment_method ENUM('ideal','creditcard','paypal','bancontact') NULL    ,
+  amount         DECIMAL(10,2)                                    NULL    ,
+  payment_status ENUM('pending','successful','failed','refunded') NULL    ,
+  payment_date   DATETIME                                         NULL    ,
+  PRIMARY KEY (payment_id)
+);
+
+CREATE TABLE reviews
+(
+  review_id   INT                                   NOT NULL DEFAULT (AUTO_INCREMENT),
+  user_id     INT                                   NOT NULL DEFAULT (AUTO_INCREMENT),
+  event_id    INT                                   NOT NULL,
+  rating      TINYINT                               NULL    ,
+  review_text TEXT                                  NULL    ,
+  created_at  DATETIME                              NULL    ,
+  status      ENUM('published','hidden','reported') NULL    ,
+  PRIMARY KEY (review_id)
+);
+
+CREATE TABLE roles
+(
+  role_id     INT          NOT NULL,
+  role_name   VARCHAR(225) NULL    ,
+  description VARCHAR(225) NULL    ,
+  PRIMARY KEY (role_id)
+);
+
+CREATE TABLE tickets
+(
+  ticket_id      INT                                     NOT NULL DEFAULT (AUTO_INCREMENT),
+  event_id       INT                                     NOT NULL,
+  ticket_name    VARCHAR(100)                            NULL    ,
+  price          DECIMAL(10,2)                           NULL    ,
+  quantity_total INT                                     NULL    ,
+  quantity_sold  INT                                     NULL    ,
+  sales_start    DATETIME                                NULL    ,
+  sales_end      DATETIME                                NULL    ,
+  status         ENUM('available','sold_out','inactive') NULL    ,
+  PRIMARY KEY (ticket_id)
+);
+
+CREATE TABLE User_profiles
+(
+  profile_id    INT          NOT NULL DEFAULT (AUTO_INCREMENT),
+  user_id       INT          NOT NULL DEFAULT (AUTO_INCREMENT),
+  date_of_birth DATE         NULL    ,
+  gender        VARCHAR(20)  NULL    ,
+  street        VARCHAR(100) NULL    ,
+  house_number  VARCHAR(10)  NULL    ,
+  postal_code   VARCHAR(10)  NULL    ,
+  city          VARCHAR(50)  NULL    ,
+  country       VARCHAR(50)  NULL    ,
+  PRIMARY KEY (profile_id)
+);
+
+CREATE TABLE user_roles
+(
+  user_roles_id INT NULL     DEFAULT (AUTO_INCREMENT),
+  user_id       INT NOT NULL DEFAULT (AUTO_INCREMENT),
+  role_id       INT NOT NULL
+);
+
+CREATE TABLE Users
+(
+  user_id       INT          NOT NULL DEFAULT (AUTO_INCREMENT),
+  first_name    VARCHAR(50)  NULL    ,
+  last_name     VARCHAR(50)  NULL    ,
+  email         VARCHAR(100) NULL     DEFAULT (UNIQUE),
+  password_hash VARCHAR(225) NULL    ,
+  phone         VARCHAR(20)  NULL    ,
+  status        ENUM         NULL    ,
+  create_at     DATETIME     NULL    ,
+  PRIMARY KEY (user_id)
+);
+
+ALTER TABLE User_profiles
+  ADD CONSTRAINT FK_Users_TO_User_profiles
+    FOREIGN KEY (user_id)
+    REFERENCES Users (user_id);
+
+ALTER TABLE user_roles
+  ADD CONSTRAINT FK_Users_TO_user_roles
+    FOREIGN KEY (user_id)
+    REFERENCES Users (user_id);
+
+ALTER TABLE user_roles
+  ADD CONSTRAINT FK_roles_TO_user_roles
+    FOREIGN KEY (role_id)
+    REFERENCES roles (role_id);
+
+ALTER TABLE organizers
+  ADD CONSTRAINT FK_Users_TO_organizers
+    FOREIGN KEY (user_id)
+    REFERENCES Users (user_id);
+
+ALTER TABLE events
+  ADD CONSTRAINT FK_organizers_TO_events
+    FOREIGN KEY (organizer_id)
+    REFERENCES organizers (organizer_id);
+
+ALTER TABLE events
+  ADD CONSTRAINT FK_locations_TO_events
+    FOREIGN KEY (location_id)
+    REFERENCES locations (location_id);
+
+ALTER TABLE event_categories
+  ADD CONSTRAINT FK_events_TO_event_categories
+    FOREIGN KEY (event_id)
+    REFERENCES events (event_id);
+
+ALTER TABLE event_categories
+  ADD CONSTRAINT FK_categories_TO_event_categories
+    FOREIGN KEY (category_id)
+    REFERENCES categories (category_id);
+
+ALTER TABLE tickets
+  ADD CONSTRAINT FK_events_TO_tickets
+    FOREIGN KEY (event_id)
+    REFERENCES events (event_id);
+
+ALTER TABLE orders
+  ADD CONSTRAINT FK_Users_TO_orders
+    FOREIGN KEY (user_id)
+    REFERENCES Users (user_id);
+
+ALTER TABLE order_items
+  ADD CONSTRAINT FK_orders_TO_order_items
+    FOREIGN KEY (order_id)
+    REFERENCES orders (order_id);
+
+ALTER TABLE order_items
+  ADD CONSTRAINT FK_tickets_TO_order_items
+    FOREIGN KEY (ticket_id)
+    REFERENCES tickets (ticket_id);
+
+ALTER TABLE payments
+  ADD CONSTRAINT FK_orders_TO_payments
+    FOREIGN KEY (order_id)
+    REFERENCES orders (order_id);
+
+ALTER TABLE reviews
+  ADD CONSTRAINT FK_Users_TO_reviews
+    FOREIGN KEY (user_id)
+    REFERENCES Users (user_id);
+
+ALTER TABLE reviews
+  ADD CONSTRAINT FK_events_TO_reviews
+    FOREIGN KEY (event_id)
+    REFERENCES events (event_id);
+
+controleer dit script een geef aan wat er aangepast moet worden
+
+Je databaseontwerp ziet er qua structuur al behoorlijk goed uit. Je hebt de belangrijkste tabellen aangemaakt en de meeste relaties tussen de tabellen kloppen.
+
+Er zitten alleen een aantal SQL-fouten en ontwerpkeuzes in die je moet aanpassen voordat je het script succesvol kunt uitvoeren in MySQL.
+
+Ik ga uit van MySQL 8.0.
+1. Belangrijkste fouten in je script
+Moet aangepast worden
+
+Tabel
+	
+
+Probleem
+	
+
+Oplossing
+
+categories
+	
+
+DEFAULT (UNIQUE) is ongeldig
+	
+
+Gebruik UNIQUE achter de kolom
+
+event_categories
+	
+
+Geen primary key en foutieve AUTO_INCREMENT
+	
+
+Maak ID NOT NULL AUTO_INCREMENT en PK
+
+events
+	
+
+organizer_id en location_id hebben AUTO_INCREMENT
+	
+
+Verwijder AUTO_INCREMENT
+
+events
+	
+
+created_at is VARCHAR
+	
+
+Gebruik DATETIME
+
+locations
+	
+
+AUTO_INCREMENT staat in DEFAULT
+	
+
+Gebruik AUTO_INCREMENT direct achter INT
+
+order_items
+	
+
+Foreign keys hebben AUTO_INCREMENT
+	
+
+Verwijder AUTO_INCREMENT
+
+orders
+	
+
+DEFAULT (UNIQUE) is ongeldig
+	
+
+Gebruik UNIQUE
+
+organizers
+	
+
+user_id heeft AUTO_INCREMENT
+	
+
+Verwijder AUTO_INCREMENT
+
+payments
+	
+
+UNIQUW is verkeerd gespeld
+	
+
+Gebruik UNIQUE
+
+reviews
+	
+
+Foreign key user_id heeft AUTO_INCREMENT
+	
+
+Verwijder AUTO_INCREMENT
+
+user_profiles
+	
+
+user_id heeft AUTO_INCREMENT
+	
+
+Verwijder AUTO_INCREMENT
+
+user_roles
+	
+
+Geen primary key
+	
+
+Voeg primary key toe
+
+Users
+	
+
+status ENUM heeft geen waarden
+	
+
+Voeg ENUM-waarden toe
+
+Users
+	
+
+create_at heeft verkeerde naam
+	
+
+Gebruik created_at
+
+Users
+	
+
+password_hash is VARCHAR(225)
+	
+
+Gebruik VARCHAR(255)
+
+Het belangrijkste om te onthouden:
+
+    AUTO_INCREMENT gebruik je voor ID-kolommen die automatisch een nieuw nummer krijgen.
+
+    PRIMARY KEY identificeert een record uniek.
+
+    FOREIGN KEY verwijst naar een bestaande rij in een andere tabel.
+
+    UNIQUE voorkomt dubbele waarden.
+
+Voorbeeld van een correcte ID-kolom:
+sql
+
+user_id INT NOT NULL AUTO_INCREMENT,
+PRIMARY KEY (user_id)
+
+Voorbeeld van een correcte foreign key-kolom:
+sql
+
+user_id INT NOT NULL,
+FOREIGN KEY (user_id) REFERENCES Users(user_id)
+
+Een foreign key krijgt dus normaal gesproken geen AUTO_INCREMENT.
+2. Aanpassingen per tabel
+
+Hieronder staan de concrete wijzigingen die ik zou doorvoeren.
+1. categories
+
+Je hebt:
+sql
+
+category_name VARCHAR(50) NULL DEFAULT (UNIQUE)
+
+Dit is fout. UNIQUE is geen defaultwaarde.
+
+Maak ervan:
+sql
+
+category_name VARCHAR(50) NOT NULL UNIQUE
+
+Ik zou ook category_id automatisch laten oplopen:
+sql
+
+category_id INT NOT NULL AUTO_INCREMENT
+
+2. event_categories
+
+Je hebt momenteel geen primary key. Bovendien is AUTO_INCREMENT verkeerd gebruikt.
+
+Vervang de tabel door:
+sql
+
+CREATE TABLE event_categories
+(
+    event_category_id INT NOT NULL AUTO_INCREMENT,
+    event_id INT NOT NULL,
+    category_id INT NOT NULL,
+
+    PRIMARY KEY (event_category_id),
+    UNIQUE (event_id, category_id)
+);
+
+De extra UNIQUE voorkomt dat je dezelfde categorie twee keer aan hetzelfde evenement koppelt.
+3. events
+
+Hier zitten drie belangrijke fouten.
+
+Je hebt:
+sql
+
+organizer_id INT NOT NULL DEFAULT (AUTO_INCREMENT),
+location_id INT NOT NULL DEFAULT (AUTO_INCREMENT),
+created_at VARCHAR(255) NULL
+
+Dit moet worden:
+sql
+
+event_id INT NOT NULL AUTO_INCREMENT,
+organizer_id INT NOT NULL,
+location_id INT NOT NULL,
+created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+
+Waarom?
+
+    event_id is de unieke identificatie van het evenement.
+
+    organizer_id verwijst naar een organisator.
+
+    location_id verwijst naar een locatie.
+
+    created_at slaat een datum en tijd op, geen tekst.
+
+4. locations
+
+Je hebt:
+sql
+
+location_id INT NOT NULL DEFAULT (AUTO_INCREMENT)
+
+Dit moet zijn:
+sql
+
+location_id INT NOT NULL AUTO_INCREMENT
+
+De rest van de tabel is in principe goed.
+5. order_items
+
+Je hebt:
+sql
+
+order_id INT NOT NULL DEFAULT (AUTO_INCREMENT),
+ticket_id INT NOT NULL DEFAULT (AUTO_INCREMENT)
+
+Dit is niet correct. Beide kolommen zijn foreign keys en moeten verwijzen naar bestaande records.
+
+Gebruik:
+sql
+
+order_items_id INT NOT NULL AUTO_INCREMENT,
+order_id INT NOT NULL,
+ticket_id INT NOT NULL
+
+Voeg ook deze controle toe:
+sql
+
+CHECK (quantity > 0),
+CHECK (unit_price >= 0),
+CHECK (subtotal >= 0)
+
+6. orders
+
+Je hebt:
+sql
+
+order_id INT NOT NULL DEFAULT (AUTO_INCREMENT),
+user_id INT NOT NULL DEFAULT (AUTO_INCREMENT),
+order_number VARCHAR(30) NULL DEFAULT (UNIQUE)
+
+Maak hiervan:
+sql
+
+order_id INT NOT NULL AUTO_INCREMENT,
+user_id INT NOT NULL,
+order_number VARCHAR(30) NOT NULL UNIQUE
+
+order_id wordt automatisch gegenereerd. user_id moet verwijzen naar een bestaande gebruiker.
+7. organizers
+
+Je hebt:
+sql
+
+user_id INT NOT NULL DEFAULT (AUTO_INCREMENT)
+
+Maak hiervan:
+sql
+
+user_id INT NOT NULL UNIQUE
+
+Ik adviseer UNIQUE omdat één gebruikersaccount in dit ontwerp maximaal één organisatoraccount mag hebben.
+8. payments
+
+Je hebt een typefout:
+sql
+
+transaction_id VARCHAR(100) NULL DEFAULT (UNIQUW)
+
+Dit moet zijn:
+sql
+
+transaction_id VARCHAR(100) UNIQUE
+
+Daarnaast moet:
+sql
+
+order_id INT NOT NULL DEFAULT (AUTO_INCREMENT)
+
+veranderen naar:
+sql
+
+order_id INT NOT NULL
+
+9. reviews
+
+Je hebt:
+sql
+
+user_id INT NOT NULL DEFAULT (AUTO_INCREMENT)
+
+Maak hiervan:
+sql
+
+user_id INT NOT NULL
+
+Ik zou daarnaast deze constraint toevoegen:
+sql
+
+UNIQUE (user_id, event_id),
+CHECK (rating BETWEEN 1 AND 5)
+
+Zo kan een gebruiker hetzelfde evenement niet meerdere keren beoordelen en ligt de beoordeling altijd tussen 1 en 5.
+10. roles
+
+Deze tabel is grotendeels goed.
+
+Mijn advies:
+sql
+
+role_id INT NOT NULL AUTO_INCREMENT,
+role_name VARCHAR(50) NOT NULL UNIQUE,
+description VARCHAR(225) NULL
+
+11. tickets
+
+Deze tabel is grotendeels goed.
+
+Voeg de volgende controles toe:
+sql
+
+CHECK (price >= 0),
+CHECK (quantity_total >= 0),
+CHECK (quantity_sold >= 0),
+CHECK (quantity_sold <= quantity_total)
+
+Hiermee voorkom je bijvoorbeeld dat er 120 tickets verkocht worden terwijl er maar 100 beschikbaar zijn.
+12. User_profiles
+
+Je hebt:
+sql
+
+user_id INT NOT NULL DEFAULT (AUTO_INCREMENT)
+
+Maak hiervan:
+sql
+
+user_id INT NOT NULL UNIQUE
+
+Dit zorgt ervoor dat een gebruiker maximaal één profiel heeft.
+13. user_roles
+
+Je hebt geen primary key en je gebruikt AUTO_INCREMENT verkeerd.
+
+Gebruik:
+sql
+
+CREATE TABLE user_roles
+(
+    user_roles_id INT NOT NULL AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    role_id INT NOT NULL,
+
+    PRIMARY KEY (user_roles_id),
+    UNIQUE (user_id, role_id)
+);
+
+14. Users
+
+Hier zitten drie aandachtspunten.
+
+Fout 1:
+sql
+
+email VARCHAR(100) NULL DEFAULT (UNIQUE)
+
+Moet worden:
+sql
+
+email VARCHAR(100) NOT NULL UNIQUE
+
+Fout 2:
+sql
+
+status ENUM NULL
+
+Een ENUM moet mogelijke waarden hebben:
+sql
+
+status ENUM('active','blocked','pending') NOT NULL DEFAULT 'pending'
+
+Fout 3:
+sql
+
+create_at DATETIME NULL
+
+Maak hiervan:
+sql
+
+created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+
+En verander password_hash naar:
+sql
+
+password_hash VARCHAR(255) NOT NULL
+
+3. Ontbrekende verbeteringen in je database
+
+Naast de SQL-fouten zijn er nog een paar zaken die je database professioneler maken.
+
+Verbetering
+	
+
+Waarom?
+
+ON DELETE RESTRICT
+	
+
+Voorkomt dat je records verwijdert waar nog afhankelijkheden van bestaan
+
+ON UPDATE CASCADE
+	
+
+Houdt gekoppelde sleutels consistent bij wijzigingen
+
+Index op foreign keys
+	
+
+Verbetert prestaties bij JOIN-query's
+
+DEFAULT CURRENT_TIMESTAMP
+	
+
+Registreert automatisch wanneer een record is aangemaakt
+
+ENGINE=InnoDB
+	
+
+Ondersteunt foreign keys en transacties
+
+Je kunt bijvoorbeeld een foreign key als volgt schrijven:
+sql
+
+ALTER TABLE events
+ADD CONSTRAINT FK_organizers_TO_events
+FOREIGN KEY (organizer_id)
+REFERENCES organizers (organizer_id)
+ON UPDATE CASCADE
+ON DELETE RESTRICT;
+
+Let op: als je deze wijziging toepast, moet je de bestaande foreign key eerst verwijderen.
+4. Mijn beoordeling van je database
+8/10
+
+Databaseontwerp
+
+Mijn inschatting op basis van je huidige SQL-script.
+
+Onderdeel
+	
+
+Beoordeling
+
+Aantal tabellen
+	
+
+Goed
+
+Relaties tussen tabellen
+	
+
+Goed
+
+Primary keys
+	
+
+Verbeteren
+
+Foreign keys
+	
+
+Goed
+
+Datatypes
+	
+
+Verbeteren
+
+Constraints
+	
+
+Uitbreiden
+
+Normalisatie
+	
+
+Goede basis
+
+Websitegeschiktheid
+	
+
+Goed
+5. Wat ik je aanraad als volgende stap
+
+Voordat je verdergaat, zou ik deze volgorde aanhouden:
+
+    Corrigeer alle AUTO_INCREMENT-fouten.
+
+    Controleer alle primary keys.
+
+    Voeg de ontbrekende UNIQUE-constraints toe.
+
+    Controleer alle foreign keys.
+
+    Voeg CHECK-constraints toe.
+
+    Maak de database aan.
+
+    Importeer de testgegevens.
+
+    Test de relaties met SQL JOIN-query's.
+
+Een extra uitdaging: probeer daarna een query te maken die alle evenementen ophaalt, inclusief de naam van de organisator, locatie, categorieën, ticketprijzen, verkochte tickets en gemiddelde reviewscore.
+
+Als je die query werkend krijgt, heb je een goede basis voor de website van Eventify.
+
+CREATE TABLE categories
+(
+  category_id   INT                 NOT NULL,
+  category_name VARCHAR(50), UNIQUE NULL    ,
+  description   TEXT                NULL    ,
+  PRIMARY KEY (category_id)
+);
+
+CREATE TABLE event_categories
+(
+  event_category_id INT NULL     DEFAULT (AUTO_INCREMENT),
+  event_id          INT NOT NULL,
+  category_id       INT NOT NULL
+);
+
+CREATE TABLE events
+(
+  event_id     INT                                               NOT NULL,
+  organizer_id INT                                               NOT NULL DEFAULT (AUTO_INCREMENT) COMMENT 'Unieke organisator-ID',
+  location_id  INT                                               NOT NULL DEFAULT (AUTO_INCREMENT),
+  title        VARCHAR(150)                                      NULL    ,
+  description  TEXT                                              NULL    ,
+  start_date   DATETIME                                          NULL    ,
+  end_date     DATETIME                                          NULL    ,
+  status       ENUM('draft','published','cancelled','completed') NULL    ,
+  image_url    VARCHAR(255)                                      NULL    ,
+  created_at   VARCHAR(255)                                      NULL    ,
+  PRIMARY KEY (event_id)
+);
+
+CREATE TABLE locations
+(
+  location_id   INT          NOT NULL DEFAULT (AUTO_INCREMENT),
+  location_name VARCHAR(100) NULL    ,
+  street        VARCHAR(100) NULL    ,
+  house_number  VARCHAR(10)  NULL    ,
+  postal_code   VARCHAR(10)  NULL    ,
+  city          VARCHAR(50)  NULL    ,
+  country       VARCHAR(50)  NULL    ,
+  capacity      INT          NULL    ,
+  PRIMARY KEY (location_id)
+);
+
+CREATE TABLE order_items
+(
+  order_items_id INT           NOT NULL DEFAULT (AUTO_INCREMENT),
+  order_id       INT           NOT NULL DEFAULT (AUTO_INCREMENT),
+  ticket_id      INT           NOT NULL DEFAULT (AUTO_INCREMENT),
+  quantity       INT           NULL    ,
+  unit_price     DECIMAL(10,2) NULL    ,
+  subtotal       DECIMAL(10,2) NULL    ,
+  PRIMARY KEY (order_items_id)
+);
+
+CREATE TABLE orders
+(
+  order_id     INT                                           NOT NULL DEFAULT (AUTO_INCREMENT),
+  user_id      INT                                           NOT NULL DEFAULT (AUTO_INCREMENT),
+  order_number VARCHAR(30)                                   NULL     DEFAULT (UNIQUE),
+  order_date   DATETIME                                      NULL    ,
+  total_amount DECIMAL(10,2)                                 NULL    ,
+  status       ENUM('pending','paid','cancelled','refunded') NULL    ,
+  PRIMARY KEY (order_id)
+);
+
+CREATE TABLE organizers
+(
+  organizer_id  INT          NOT NULL DEFAULT (AUTO_INCREMENT) COMMENT 'Unieke organisator-ID',
+  user_id       INT          NOT NULL DEFAULT (AUTO_INCREMENT) COMMENT 'Gekoppelde gebruikersaccount',
+  company_name  VARCHAR(100) NULL     COMMENT 'Bedrijfsnaam',
+  description   TEXT         NULL     COMMENT 'Beschrijving',
+  website       VARCHAR(255) NULL     COMMENT 'Website',
+  contact_email VARCHAR(100) NULL     COMMENT 'Contactadres',
+  verified      BOOLEAN      NULL     COMMENT 'Is organisator gecontroleerd?',
+  PRIMARY KEY (organizer_id)
+);
+
+CREATE TABLE payments
+(
+  payment_id     INT                                              NOT NULL DEFAULT (AUTO_INCREMENT),
+  order_id       INT                                              NOT NULL DEFAULT (AUTO_INCREMENT),
+  transaction_id VARCHAR(100)                                     NULL     DEFAULT (UNIQUW),
+  payment_method ENUM('ideal','creditcard','paypal','bancontact') NULL    ,
+  amount         DECIMAL(10,2)                                    NULL    ,
+  payment_status ENUM('pending','successful','failed','refunded') NULL    ,
+  payment_date   DATETIME                                         NULL    ,
+  PRIMARY KEY (payment_id)
+);
+
+CREATE TABLE reviews
+(
+  review_id   INT                                   NOT NULL DEFAULT (AUTO_INCREMENT),
+  user_id     INT                                   NOT NULL DEFAULT (AUTO_INCREMENT),
+  event_id    INT                                   NOT NULL,
+  rating      TINYINT                               NULL    ,
+  review_text TEXT                                  NULL    ,
+  created_at  DATETIME                              NULL    ,
+  status      ENUM('published','hidden','reported') NULL    ,
+  PRIMARY KEY (review_id)
+);
+
+CREATE TABLE roles
+(
+  role_id     INT          NOT NULL,
+  role_name   VARCHAR(225) NULL    ,
+  description VARCHAR(225) NULL    ,
+  PRIMARY KEY (role_id)
+);
+
+CREATE TABLE tickets
+(
+  ticket_id      INT                                     NOT NULL DEFAULT (AUTO_INCREMENT),
+  event_id       INT                                     NOT NULL,
+  ticket_name    VARCHAR(100)                            NULL    ,
+  price          DECIMAL(10,2)                           NULL    ,
+  quantity_total INT                                     NULL    ,
+  quantity_sold  INT                                     NULL    ,
+  sales_start    DATETIME                                NULL    ,
+  sales_end      DATETIME                                NULL    ,
+  status         ENUM('available','sold_out','inactive') NULL    ,
+  PRIMARY KEY (ticket_id)
+);
+
+CREATE TABLE User_profiles
+(
+  profile_id    INT          NOT NULL DEFAULT (AUTO_INCREMENT),
+  user_id       INT          NOT NULL DEFAULT (AUTO_INCREMENT),
+  date_of_birth DATE         NULL    ,
+  gender        VARCHAR(20)  NULL    ,
+  street        VARCHAR(100) NULL    ,
+  house_number  VARCHAR(10)  NULL    ,
+  postal_code   VARCHAR(10)  NULL    ,
+  city          VARCHAR(50)  NULL    ,
+  country       VARCHAR(50)  NULL    ,
+  PRIMARY KEY (profile_id)
+);
+
+CREATE TABLE user_roles
+(
+  user_roles_id INT NULL     DEFAULT (AUTO_INCREMENT),
+  user_id       INT NOT NULL DEFAULT (AUTO_INCREMENT),
+  role_id       INT NOT NULL
+);
+
+CREATE TABLE Users
+(
+  user_id       INT          NOT NULL DEFAULT (AUTO_INCREMENT),
+  first_name    VARCHAR(50)  NULL    ,
+  last_name     VARCHAR(50)  NULL    ,
+  email         VARCHAR(100) NULL     DEFAULT (UNIQUE),
+  password_hash VARCHAR(225) NULL    ,
+  phone         VARCHAR(20)  NULL    ,
+  status        ENUM         NULL    ,
+  create_at     DATETIME     NULL    ,
+  PRIMARY KEY (user_id)
+);
+
+ALTER TABLE User_profiles
+  ADD CONSTRAINT FK_Users_TO_User_profiles
+    FOREIGN KEY (user_id)
+    REFERENCES Users (user_id);
+
+ALTER TABLE user_roles
+  ADD CONSTRAINT FK_Users_TO_user_roles
+    FOREIGN KEY (user_id)
+    REFERENCES Users (user_id);
+
+ALTER TABLE user_roles
+  ADD CONSTRAINT FK_roles_TO_user_roles
+    FOREIGN KEY (role_id)
+    REFERENCES roles (role_id);
+
+ALTER TABLE organizers
+  ADD CONSTRAINT FK_Users_TO_organizers
+    FOREIGN KEY (user_id)
+    REFERENCES Users (user_id);
+
+ALTER TABLE events
+  ADD CONSTRAINT FK_organizers_TO_events
+    FOREIGN KEY (organizer_id)
+    REFERENCES organizers (organizer_id);
+
+ALTER TABLE events
+  ADD CONSTRAINT FK_locations_TO_events
+    FOREIGN KEY (location_id)
+    REFERENCES locations (location_id);
+
+ALTER TABLE event_categories
+  ADD CONSTRAINT FK_events_TO_event_categories
+    FOREIGN KEY (event_id)
+    REFERENCES events (event_id);
+
+ALTER TABLE event_categories
+  ADD CONSTRAINT FK_categories_TO_event_categories
+    FOREIGN KEY (category_id)
+    REFERENCES categories (category_id);
+
+ALTER TABLE tickets
+  ADD CONSTRAINT FK_events_TO_tickets
+    FOREIGN KEY (event_id)
+    REFERENCES events (event_id);
+
+ALTER TABLE orders
+  ADD CONSTRAINT FK_Users_TO_orders
+    FOREIGN KEY (user_id)
+    REFERENCES Users (user_id);
+
+ALTER TABLE order_items
+  ADD CONSTRAINT FK_orders_TO_order_items
+    FOREIGN KEY (order_id)
+    REFERENCES orders (order_id);
+
+ALTER TABLE order_items
+  ADD CONSTRAINT FK_tickets_TO_order_items
+    FOREIGN KEY (ticket_id)
+    REFERENCES tickets (ticket_id);
+
+ALTER TABLE payments
+  ADD CONSTRAINT FK_orders_TO_payments
+    FOREIGN KEY (order_id)
+    REFERENCES orders (order_id);
+
+ALTER TABLE reviews
+  ADD CONSTRAINT FK_Users_TO_reviews
+    FOREIGN KEY (user_id)
+    REFERENCES Users (user_id);
+
+ALTER TABLE reviews
+  ADD CONSTRAINT FK_events_TO_reviews
+    FOREIGN KEY (event_id)
+    REFERENCES events (event_id);
+
+Je hebt al een aantal dingen geprobeerd aan te passen, maar helaas zijn er nog behoorlijk wat fouten overgebleven. Vooral bij AUTO_INCREMENT, UNIQUE en de foreign keys.
+
+Ik controleer je nieuwste versie opnieuw. Hieronder geef ik precies aan wat je moet veranderen.
+1. Fouten die nog steeds in je script zitten
+Nog niet uitvoerbaar
+
+Tabel
+	
+
+Fout
+	
+
+Wat moet je doen?
+
+categories
+	
+
+UNIQUE NULL staat verkeerd
+	
+
+VARCHAR(50) NOT NULL UNIQUE
+
+event_categories
+	
+
+AUTO_INCREMENT staat verkeerd
+	
+
+ID op NOT NULL AUTO_INCREMENT zetten
+
+event_categories
+	
+
+Geen primary key
+	
+
+Primary key toevoegen
+
+events
+	
+
+organizer_id heeft AUTO_INCREMENT
+	
+
+Verwijderen
+
+events
+	
+
+location_id heeft AUTO_INCREMENT
+	
+
+Verwijderen
+
+events
+	
+
+event_id heeft geen AUTO_INCREMENT
+	
+
+Toevoegen
+
+events
+	
+
+created_at is VARCHAR
+	
+
+Veranderen naar DATETIME
+
+locations
+	
+
+DEFAULT (AUTO_INCREMENT)
+	
+
+Veranderen naar AUTO_INCREMENT
+
+order_items
+	
+
+order_id heeft AUTO_INCREMENT
+	
+
+Verwijderen
+
+order_items
+	
+
+ticket_id heeft AUTO_INCREMENT
+	
+
+Verwijderen
+
+orders
+	
+
+order_id heeft DEFAULT
+	
+
+Veranderen naar AUTO_INCREMENT
+
+orders
+	
+
+user_id heeft AUTO_INCREMENT
+	
+
+Verwijderen
+
+orders
+	
+
+UNIQUE staat verkeerd
+	
+
+Achter de kolom zetten
+
+organizers
+	
+
+organizer_id heeft DEFAULT
+	
+
+Veranderen naar AUTO_INCREMENT
+
+organizers
+	
+
+user_id heeft AUTO_INCREMENT
+	
+
+Verwijderen
+
+payments
+	
+
+order_id heeft AUTO_INCREMENT
+	
+
+Verwijderen
+
+payments
+	
+
+UNIQUW is verkeerd gespeld
+	
+
+UNIQUE gebruiken
+
+reviews
+	
+
+user_id heeft AUTO_INCREMENT
+	
+
+Verwijderen
+
+tickets
+	
+
+ticket_id heeft DEFAULT
+	
+
+Veranderen naar AUTO_INCREMENT
+
+user_profiles
+	
+
+user_id heeft AUTO_INCREMENT
+	
+
+Verwijderen
+
+user_roles
+	
+
+Geen primary key
+	
+
+Toevoegen
+
+user_roles
+	
+
+user_roles_id heeft AUTO_INCREMENT verkeerd staan
+	
+
+Corrigeren
+
+Users
+	
+
+user_id heeft DEFAULT
+	
+
+Veranderen naar AUTO_INCREMENT
+
+Users
+	
+
+ENUM heeft geen waarden
+	
+
+ENUM-waarden toevoegen
+
+Users
+	
+
+create_at verkeerd gespeld
+	
+
+created_at gebruiken
+
+Users
+	
+
+password_hash is VARCHAR(225)
+	
+
+VARCHAR(255) gebruiken
+2. Exacte SQL-code die je moet vervangen
+
+Je hoeft niet je volledige script opnieuw te schrijven. Vervang de volgende tabeldefinities.
+Categories
+sql
+
+CREATE TABLE categories
+(
+    category_id INT NOT NULL AUTO_INCREMENT,
+    category_name VARCHAR(50) NOT NULL UNIQUE,
+    description TEXT NULL,
+    PRIMARY KEY (category_id)
+);
+
+Event_categories
+sql
+
+CREATE TABLE event_categories
+(
+    event_category_id INT NOT NULL AUTO_INCREMENT,
+    event_id INT NOT NULL,
+    category_id INT NOT NULL,
+
+    PRIMARY KEY (event_category_id),
+    UNIQUE (event_id, category_id)
+);
+
+Events
+sql
+
+CREATE TABLE events
+(
+    event_id INT NOT NULL AUTO_INCREMENT,
+    organizer_id INT NOT NULL,
+    location_id INT NOT NULL,
+    title VARCHAR(150) NOT NULL,
+    description TEXT NULL,
+    start_date DATETIME NOT NULL,
+    end_date DATETIME NOT NULL,
+    status ENUM('draft','published','cancelled','completed')
+        NOT NULL DEFAULT 'draft',
+    image_url VARCHAR(255) NULL,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    PRIMARY KEY (event_id)
+);
+
+Locations
+sql
+
+CREATE TABLE locations
+(
+    location_id INT NOT NULL AUTO_INCREMENT,
+    location_name VARCHAR(100) NOT NULL,
+    street VARCHAR(100) NULL,
+    house_number VARCHAR(10) NULL,
+    postal_code VARCHAR(10) NULL,
+    city VARCHAR(50) NOT NULL,
+    country VARCHAR(50) NOT NULL,
+    capacity INT NOT NULL,
+
+    PRIMARY KEY (location_id)
+);
+
+Order_items
+sql
+
+CREATE TABLE order_items
+(
+    order_items_id INT NOT NULL AUTO_INCREMENT,
+    order_id INT NOT NULL,
+    ticket_id INT NOT NULL,
+    quantity INT NOT NULL,
+    unit_price DECIMAL(10,2) NOT NULL,
+    subtotal DECIMAL(10,2) NOT NULL,
+
+    PRIMARY KEY (order_items_id),
+    CHECK (quantity > 0),
+    CHECK (unit_price >= 0),
+    CHECK (subtotal >= 0)
+);
+
+Orders
+sql
+
+CREATE TABLE orders
+(
+    order_id INT NOT NULL AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    order_number VARCHAR(30) NOT NULL UNIQUE,
+    order_date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    total_amount DECIMAL(10,2) NOT NULL,
+    status ENUM('pending','paid','cancelled','refunded')
+        NOT NULL DEFAULT 'pending',
+
+    PRIMARY KEY (order_id),
+    CHECK (total_amount >= 0)
+);
+
+Organizers
+sql
+
+CREATE TABLE organizers
+(
+    organizer_id INT NOT NULL AUTO_INCREMENT,
+    user_id INT NOT NULL UNIQUE,
+    company_name VARCHAR(100) NOT NULL,
+    description TEXT NULL,
+    website VARCHAR(255) NULL,
+    contact_email VARCHAR(100) NOT NULL,
+    verified BOOLEAN NOT NULL DEFAULT FALSE,
+
+    PRIMARY KEY (organizer_id)
+);
+
+Payments
+sql
+
+CREATE TABLE payments
+(
+    payment_id INT NOT NULL AUTO_INCREMENT,
+    order_id INT NOT NULL,
+    transaction_id VARCHAR(100) NULL UNIQUE,
+    payment_method ENUM('ideal','creditcard','paypal','bancontact') NOT NULL,
+    amount DECIMAL(10,2) NOT NULL,
+    payment_status ENUM('pending','successful','failed','refunded')
+        NOT NULL DEFAULT 'pending',
+    payment_date DATETIME NULL,
+
+    PRIMARY KEY (payment_id),
+    CHECK (amount >= 0)
+);
+
+Reviews
+sql
+
+CREATE TABLE reviews
+(
+    review_id INT NOT NULL AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    event_id INT NOT NULL,
+    rating TINYINT NOT NULL,
+    review_text TEXT NULL,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    status ENUM('published','hidden','reported')
+        NOT NULL DEFAULT 'published',
+
+    PRIMARY KEY (review_id),
+    UNIQUE (user_id, event_id),
+    CHECK (rating BETWEEN 1 AND 5)
+);
+
+Roles
+sql
+
+CREATE TABLE roles
+(
+    role_id INT NOT NULL AUTO_INCREMENT,
+    role_name VARCHAR(50) NOT NULL UNIQUE,
+    description VARCHAR(225) NULL,
+
+    PRIMARY KEY (role_id)
+);
+
+Tickets
+sql
+
+CREATE TABLE tickets
+(
+    ticket_id INT NOT NULL AUTO_INCREMENT,
+    event_id INT NOT NULL,
+    ticket_name VARCHAR(100) NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    quantity_total INT NOT NULL,
+    quantity_sold INT NOT NULL DEFAULT 0,
+    sales_start DATETIME NULL,
+    sales_end DATETIME NULL,
+    status ENUM('available','sold_out','inactive')
+        NOT NULL DEFAULT 'available',
+
+    PRIMARY KEY (ticket_id),
+    CHECK (price >= 0),
+    CHECK (quantity_total >= 0),
+    CHECK (quantity_sold >= 0),
+    CHECK (quantity_sold <= quantity_total)
+);
+
+User_profiles
+sql
+
+CREATE TABLE User_profiles
+(
+    profile_id INT NOT NULL AUTO_INCREMENT,
+    user_id INT NOT NULL UNIQUE,
+    date_of_birth DATE NULL,
+    gender VARCHAR(20) NULL,
+    street VARCHAR(100) NULL,
+    house_number VARCHAR(10) NULL,
+    postal_code VARCHAR(10) NULL,
+    city VARCHAR(50) NULL,
+    country VARCHAR(50) NULL,
+
+    PRIMARY KEY (profile_id)
+);
+
+User_roles
+sql
+
+CREATE TABLE user_roles
+(
+    user_roles_id INT NOT NULL AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    role_id INT NOT NULL,
+
+    PRIMARY KEY (user_roles_id),
+    UNIQUE (user_id, role_id)
+);
+
+Users
+sql
+
+CREATE TABLE Users
+(
+    user_id INT NOT NULL AUTO_INCREMENT,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    phone VARCHAR(20) NULL,
+    status ENUM('active','blocked','pending')
+        NOT NULL DEFAULT 'pending',
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    PRIMARY KEY (user_id)
+);
+
+3. Je ALTER TABLE-statements
+
+Je bestaande foreign keys zijn inhoudelijk goed. Je kunt ze behouden.
+
+Ik zou alleen de volgende instellingen toevoegen:
+sql
+
+ALTER TABLE User_profiles
+ADD CONSTRAINT FK_Users_TO_User_profiles
+FOREIGN KEY (user_id)
+REFERENCES Users(user_id)
+ON DELETE CASCADE
+ON UPDATE CASCADE;
+
+Gebruik voor de andere foreign keys dezelfde aanpak, maar let op: je moet dan de bestaande foreign keys vervangen om dubbele constraints te voorkomen.
+4. Test of je database goed werkt
+
+Nadat je alle tabellen hebt aangemaakt, voer je deze query's uit.
+
+Test 1: Controleer alle tabellen
+sql
+
+SHOW TABLES;
+
+Test 2: Controleer de kolommen
+sql
+
+DESCRIBE events;
+
+Test 3: Controleer de relaties
+sql
+
+SELECT
+    e.title,
+    o.company_name,
+    l.location_name,
+    l.city
+FROM events e
+INNER JOIN organizers o
+    ON e.organizer_id = o.organizer_id
+INNER JOIN locations l
+    ON e.location_id = l.location_id;
+
+Test 4: Controleer de categorieën
+sql
+
+SELECT
+    e.title,
+    c.category_name
+FROM events e
+INNER JOIN event_categories ec
+    ON e.event_id = ec.event_id
+INNER JOIN categories c
+    ON ec.category_id = c.category_id;
+
+5. Wat ik nog zou verbeteren
+
+Er is één belangrijk databaseprobleem dat je nog niet hebt opgelost: de consistentie van bestellingen.
+
+Bijvoorbeeld:
+
+    Een gebruiker bestelt 2 tickets.
+
+    De bestelling wordt betaald.
+
+    De betaling wordt geregistreerd.
+
+    De ticketvoorraad wordt verlaagd.
+
+Dit moet als één veilige database-transactie gebeuren. Anders kunnen er verkeerde aantallen ontstaan wanneer twee gebruikers tegelijkertijd tickets bestellen.
+
+Dat is een mooie volgende stap voor jouw gevorderde databaseproject.
+
+Mijn advies: vervang eerst de 14 tabeldefinities hierboven en voer daarna je ALTER TABLE-statements uit. Dan heb je een veel betere technische basis voor Eventify.
+
+IS DEZE BETER
+
+
+CREATE TABLE categories
+(
+  category_id   INT                 NOT NULL,
+  category_name VARCHAR(50), UNIQUE NOT NULL,
+  description   TEXT                NULL    ,
+  PRIMARY KEY (category_id)
+);
+
+CREATE TABLE event_categories
+(
+  event_category_id INT NOT NULL DEFAULT (AUTO_INCREMENT),
+  event_id          INT NOT NULL,
+  category_id       INT NOT NULL
+);
+
+CREATE TABLE events
+(
+  event_id     INT                                               NOT NULL DEFAULT (AUTO_INCREMENT),
+  organizer_id INT AUTO_INCREMENT                                NOT NULL COMMENT 'Unieke organisator-ID',
+  location_id  INT AUTO_INCREMENT                                NOT NULL,
+  title        VARCHAR(150)                                      NULL    ,
+  description  TEXT                                              NULL    ,
+  start_date   DATETIME                                          NULL    ,
+  end_date     DATETIME                                          NULL    ,
+  status       ENUM('draft','published','cancelled','completed') NULL    ,
+  image_url    VARCHAR(255)                                      NULL    ,
+  created_at   DATETIME                                          NULL    ,
+  PRIMARY KEY (event_id)
+);
+
+CREATE TABLE locations
+(
+  location_id   INT AUTO_INCREMENT NOT NULL,
+  location_name VARCHAR(100)       NULL    ,
+  street        VARCHAR(100)       NULL    ,
+  house_number  VARCHAR(10)        NULL    ,
+  postal_code   VARCHAR(10)        NULL    ,
+  city          VARCHAR(50)        NULL    ,
+  country       VARCHAR(50)        NULL    ,
+  capacity      INT                NULL    ,
+  PRIMARY KEY (location_id)
+);
+
+CREATE TABLE order_items
+(
+  order_items_id INT                 NOT NULL DEFAULT (AUTO_INCREMENT),
+  order_id       INT  AUTO_INCREMENT NOT NULL,
+  ticket_id      INT                 NOT NULL,
+  quantity       INT                 NULL    ,
+  unit_price     DECIMAL(10,2)       NULL    ,
+  subtotal       DECIMAL(10,2)       NULL    ,
+  PRIMARY KEY (order_items_id)
+);
+
+CREATE TABLE orders
+(
+  order_id     INT  AUTO_INCREMENT                           NOT NULL,
+  user_id      INT                                           NOT NULL,
+  order_number VARCHAR(30) UNIQUE                            NULL    ,
+  order_date   DATETIME                                      NULL    ,
+  total_amount DECIMAL(10,2)                                 NULL    ,
+  status       ENUM('pending','paid','cancelled','refunded') NULL    ,
+  PRIMARY KEY (order_id)
+);
+
+CREATE TABLE organizers
+(
+  organizer_id  INT AUTO_INCREMENT NOT NULL COMMENT 'Unieke organisator-ID',
+  user_id       INT                NOT NULL COMMENT 'Gekoppelde gebruikersaccount',
+  company_name  VARCHAR(100)       NULL     COMMENT 'Bedrijfsnaam',
+  description   TEXT               NULL     COMMENT 'Beschrijving',
+  website       VARCHAR(255)       NULL     COMMENT 'Website',
+  contact_email VARCHAR(100)       NULL     COMMENT 'Contactadres',
+  verified      BOOLEAN            NULL     COMMENT 'Is organisator gecontroleerd?',
+  PRIMARY KEY (organizer_id)
+);
+
+CREATE TABLE payments
+(
+  payment_id     INT                                              NOT NULL DEFAULT (AUTO_INCREMENT),
+  order_id       INT  AUTO_INCREMENT                              NOT NULL DEFAULT (AUTO_INCREMENT),
+  transaction_id VARCHAR(100)                                     NULL     DEFAULT (UNIQUW),
+  payment_method ENUM('ideal','creditcard','paypal','bancontact') NULL    ,
+  amount         DECIMAL(10,2)                                    NULL    ,
+  payment_status ENUM('pending','successful','failed','refunded') NULL    ,
+  payment_date   DATETIME                                         NULL    ,
+  PRIMARY KEY (payment_id)
+);
+
+CREATE TABLE reviews
+(
+  review_id   INT                                   NOT NULL DEFAULT (AUTO_INCREMENT),
+  user_id     INT                                   NOT NULL DEFAULT (AUTO_INCREMENT),
+  event_id    INT                                   NOT NULL,
+  rating      TINYINT                               NULL    ,
+  review_text TEXT                                  NULL    ,
+  created_at  DATETIME                              NULL    ,
+  status      ENUM('published','hidden','reported') NULL    ,
+  PRIMARY KEY (review_id)
+);
+
+CREATE TABLE roles
+(
+  role_id     INT          NOT NULL,
+  role_name   VARCHAR(225) NULL    ,
+  description VARCHAR(225) NULL    ,
+  PRIMARY KEY (role_id)
+);
+
+CREATE TABLE tickets
+(
+  ticket_id      INT                                     NOT NULL DEFAULT (AUTO_INCREMENT),
+  event_id       INT                                     NOT NULL,
+  ticket_name    VARCHAR(100)                            NULL    ,
+  price          DECIMAL(10,2)                           NULL    ,
+  quantity_total INT                                     NULL    ,
+  quantity_sold  INT                                     NULL    ,
+  sales_start    DATETIME                                NULL    ,
+  sales_end      DATETIME                                NULL    ,
+  status         ENUM('available','sold_out','inactive') NULL    ,
+  PRIMARY KEY (ticket_id)
+);
+
+CREATE TABLE User_profiles
+(
+  profile_id    INT          NOT NULL DEFAULT (AUTO_INCREMENT),
+  user_id       INT          NOT NULL DEFAULT (AUTO_INCREMENT),
+  date_of_birth DATE         NULL    ,
+  gender        VARCHAR(20)  NULL    ,
+  street        VARCHAR(100) NULL    ,
+  house_number  VARCHAR(10)  NULL    ,
+  postal_code   VARCHAR(10)  NULL    ,
+  city          VARCHAR(50)  NULL    ,
+  country       VARCHAR(50)  NULL    ,
+  PRIMARY KEY (profile_id)
+);
+
+CREATE TABLE user_roles
+(
+  user_roles_id INT NULL     DEFAULT (AUTO_INCREMENT),
+  user_id       INT NOT NULL DEFAULT (AUTO_INCREMENT),
+  role_id       INT NOT NULL
+);
+
+CREATE TABLE Users
+(
+  user_id       INT          NOT NULL DEFAULT (AUTO_INCREMENT),
+  first_name    VARCHAR(50)  NULL    ,
+  last_name     VARCHAR(50)  NULL    ,
+  email         VARCHAR(100) NULL     DEFAULT (UNIQUE),
+  password_hash VARCHAR(225) NULL    ,
+  phone         VARCHAR(20)  NULL    ,
+  status        ENUM         NULL    ,
+  create_at     DATETIME     NULL    ,
+  PRIMARY KEY (user_id)
+);
+
+ALTER TABLE User_profiles
+  ADD CONSTRAINT FK_Users_TO_User_profiles
+    FOREIGN KEY (user_id)
+    REFERENCES Users (user_id);
+
+ALTER TABLE user_roles
+  ADD CONSTRAINT FK_Users_TO_user_roles
+    FOREIGN KEY (user_id)
+    REFERENCES Users (user_id);
+
+ALTER TABLE user_roles
+  ADD CONSTRAINT FK_roles_TO_user_roles
+    FOREIGN KEY (role_id)
+    REFERENCES roles (role_id);
+
+ALTER TABLE organizers
+  ADD CONSTRAINT FK_Users_TO_organizers
+    FOREIGN KEY (user_id)
+    REFERENCES Users (user_id);
+
+ALTER TABLE events
+  ADD CONSTRAINT FK_organizers_TO_events
+    FOREIGN KEY (organizer_id)
+    REFERENCES organizers (organizer_id);
+
+ALTER TABLE events
+  ADD CONSTRAINT FK_locations_TO_events
+    FOREIGN KEY (location_id)
+    REFERENCES locations (location_id);
+
+ALTER TABLE event_categories
+  ADD CONSTRAINT FK_events_TO_event_categories
+    FOREIGN KEY (event_id)
+    REFERENCES events (event_id);
+
+ALTER TABLE event_categories
+  ADD CONSTRAINT FK_categories_TO_event_categories
+    FOREIGN KEY (category_id)
+    REFERENCES categories (category_id);
+
+ALTER TABLE tickets
+  ADD CONSTRAINT FK_events_TO_tickets
+    FOREIGN KEY (event_id)
+    REFERENCES events (event_id);
+
+ALTER TABLE orders
+  ADD CONSTRAINT FK_Users_TO_orders
+    FOREIGN KEY (user_id)
+    REFERENCES Users (user_id);
+
+ALTER TABLE order_items
+  ADD CONSTRAINT FK_orders_TO_order_items
+    FOREIGN KEY (order_id)
+    REFERENCES orders (order_id);
+
+ALTER TABLE order_items
+  ADD CONSTRAINT FK_tickets_TO_order_items
+    FOREIGN KEY (ticket_id)
+    REFERENCES tickets (ticket_id);
+
+ALTER TABLE payments
+  ADD CONSTRAINT FK_orders_TO_payments
+    FOREIGN KEY (order_id)
+    REFERENCES orders (order_id);
+
+ALTER TABLE reviews
+  ADD CONSTRAINT FK_Users_TO_reviews
+    FOREIGN KEY (user_id)
+    REFERENCES Users (user_id);
+
+ALTER TABLE reviews
+  ADD CONSTRAINT FK_events_TO_reviews
+    FOREIGN KEY (event_id)
+    REFERENCES events (event_id);
+
+Ja, je bent vooruitgegaan! Je gebruikt nu op meerdere plekken AUTO_INCREMENT op de juiste manier en je hebt een aantal eerdere fouten opgelost.
+
+Maar eerlijk gezegd: je script is nog steeds niet uitvoerbaar in MySQL 8.0. Er staan nog enkele belangrijke fouten in.
+
+Ik loop ze opnieuw met je langs.
+1. Wat is er nu beter?
+
+Deze onderdelen heb je verbeterd:
+
+    locations: AUTO_INCREMENT staat nu correct.
+
+    organizers: organizer_id heeft nu AUTO_INCREMENT.
+
+    orders: order_id heeft nu AUTO_INCREMENT.
+
+    events: created_at is nu DATETIME.
+
+    orders: UNIQUE staat nu achter order_number.
+
+    Je foreign keys zijn grotendeels goed opgezet.
+
+Dat is vooruitgang!
+2. Welke fouten moet je nog aanpassen?
+
+Hieronder staan de fouten die ik nog in je nieuwste script zie.
+Nog aanpassen
+
+Tabel
+	
+
+Jouw fout
+	
+
+Correctie
+
+categories
+	
+
+VARCHAR(50), UNIQUE NOT NULL
+	
+
+VARCHAR(50) NOT NULL UNIQUE
+
+categories
+	
+
+category_id heeft geen AUTO_INCREMENT
+	
+
+Toevoegen
+
+event_categories
+	
+
+DEFAULT (AUTO_INCREMENT)
+	
+
+AUTO_INCREMENT direct achter INT
+
+event_categories
+	
+
+Geen primary key
+	
+
+Toevoegen
+
+events
+	
+
+organizer_id heeft AUTO_INCREMENT
+	
+
+Verwijderen
+
+events
+	
+
+location_id heeft AUTO_INCREMENT
+	
+
+Verwijderen
+
+order_items
+	
+
+order_items_id heeft DEFAULT
+	
+
+AUTO_INCREMENT direct achter INT
+
+order_items
+	
+
+order_id heeft AUTO_INCREMENT
+	
+
+Verwijderen
+
+payments
+	
+
+payment_id heeft DEFAULT
+	
+
+AUTO_INCREMENT direct achter INT
+
+payments
+	
+
+order_id heeft AUTO_INCREMENT
+	
+
+Verwijderen
+
+payments
+	
+
+UNIQUW
+	
+
+UNIQUE
+
+reviews
+	
+
+review_id heeft DEFAULT
+	
+
+AUTO_INCREMENT direct achter INT
+
+reviews
+	
+
+user_id heeft AUTO_INCREMENT
+	
+
+Verwijderen
+
+tickets
+	
+
+ticket_id heeft DEFAULT
+	
+
+AUTO_INCREMENT direct achter INT
+
+user_profiles
+	
+
+profile_id heeft DEFAULT
+	
+
+AUTO_INCREMENT direct achter INT
+
+user_profiles
+	
+
+user_id heeft AUTO_INCREMENT
+	
+
+Verwijderen
+
+user_roles
+	
+
+user_roles_id heeft DEFAULT
+	
+
+AUTO_INCREMENT direct achter INT
+
+user_roles
+	
+
+user_id heeft AUTO_INCREMENT
+	
+
+Verwijderen
+
+user_roles
+	
+
+Geen primary key
+	
+
+Toevoegen
+
+Users
+	
+
+user_id heeft DEFAULT
+	
+
+AUTO_INCREMENT direct achter INT
+
+Users
+	
+
+email heeft DEFAULT (UNIQUE)
+	
+
+UNIQUE achter de kolom
+
+Users
+	
+
+status ENUM heeft geen waarden
+	
+
+ENUM-waarden toevoegen
+
+Users
+	
+
+password_hash VARCHAR(225)
+	
+
+VARCHAR(255)
+3. Concrete correcties
+
+Dit zijn de belangrijkste stukken die je letterlijk kunt vervangen.
+
+Categories
+sql
+
+category_id INT NOT NULL AUTO_INCREMENT,
+category_name VARCHAR(50) NOT NULL UNIQUE,
+
+Event_categories
+sql
+
+CREATE TABLE event_categories
+(
+    event_category_id INT NOT NULL AUTO_INCREMENT,
+    event_id INT NOT NULL,
+    category_id INT NOT NULL,
+
+    PRIMARY KEY (event_category_id),
+    UNIQUE (event_id, category_id)
+);
+
+Events
+sql
+
+event_id INT NOT NULL AUTO_INCREMENT,
+organizer_id INT NOT NULL,
+location_id INT NOT NULL,
+
+Order_items
+sql
+
+order_items_id INT NOT NULL AUTO_INCREMENT,
+order_id INT NOT NULL,
+ticket_id INT NOT NULL,
+
+Payments
+sql
+
+payment_id INT NOT NULL AUTO_INCREMENT,
+order_id INT NOT NULL,
+transaction_id VARCHAR(100) NULL UNIQUE,
+
+Reviews
+sql
+
+review_id INT NOT NULL AUTO_INCREMENT,
+user_id INT NOT NULL,
+
+User_profiles
+sql
+
+profile_id INT NOT NULL AUTO_INCREMENT,
+user_id INT NOT NULL UNIQUE,
+
+User_roles
+sql
+
+CREATE TABLE user_roles
+(
+    user_roles_id INT NOT NULL AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    role_id INT NOT NULL,
+
+    PRIMARY KEY (user_roles_id),
+    UNIQUE (user_id, role_id)
+);
+
+Users
+sql
+
+user_id INT NOT NULL AUTO_INCREMENT,
+email VARCHAR(100) NOT NULL UNIQUE,
+password_hash VARCHAR(255) NOT NULL,
+status ENUM('active','blocked','pending') NOT NULL,
+created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+
+4. Eén belangrijk probleem met je relaties
+
+Je hebt bijvoorbeeld deze relatie:
+sql
+
+ALTER TABLE events
+ADD CONSTRAINT FK_organizers_TO_events
+FOREIGN KEY (organizer_id)
+REFERENCES organizers (organizer_id);
+
+Deze is correct.
+
+Maar let op: je moet eerst de tabel organizers aanmaken voordat je de foreign key toevoegt.
+
+Je doet dat in je script goed: eerst maak je alle tabellen en daarna voeg je de foreign keys toe.
+5. Mijn advies: doe nog deze extra verbeteringen
+
+Om je database echt op gevorderd niveau te krijgen, zou ik nog deze constraints toevoegen:
+sql
+
+ALTER TABLE reviews
+ADD CONSTRAINT chk_rating
+CHECK (rating BETWEEN 1 AND 5);
+
+sql
+
+ALTER TABLE tickets
+ADD CONSTRAINT chk_ticket_price
+CHECK (price >= 0);
+
+sql
+
+ALTER TABLE tickets
+ADD CONSTRAINT chk_ticket_quantity
+CHECK (quantity_sold <= quantity_total);
+
+sql
+
+ALTER TABLE order_items
+ADD CONSTRAINT chk_order_quantity
+CHECK (quantity > 0);
+
+Deze zorgen ervoor dat je database verkeerde gegevens automatisch weigert.
+6. Hoe ver ben je nu?
+
+Voortgang databaseontwerp
+85%
+
+Dit is een indicatieve inschatting van de voortgang, geen uitvoertest.
+
+    Goed Tabellenstructuur
+
+    Goed Basisrelaties
+
+    Aanpassen AUTO_INCREMENT
+
+    Aanpassen Constraints
+
+    Nog testen SQL-uitvoering
+
+Mijn voorstel: probeer eerst zelf de resterende fouten op te lossen. Dat is een goede manier om SQL echt te leren.
+
+Stuur daarna je volgende versie. Dan controleer ik hem alsof ik je databaseproject moet beoordelen en geef ik per fout aan waarom MySQL deze wel of niet accepteert.
